@@ -5,25 +5,25 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "Azure DevOps Engineer",
+    cardImage: "assets/images/experience-page/Azure-Devops_TCS_DNB.png",
+    place: "TCS-DNB Infrastrure Engineer",
+    time: "(May, 2020 - Present)",
+    desp: "<li>Developed multiple Azure Pipelines to have a CICD deployment for several applications.</li> <li>Utlized Biceps for pipeline deployments.</li> <li>Migrated multiple OnPrem workloads to Azure and standardized them via pipeline.</li> <li>Azure Administrator support for Cloud Workload.</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    title: "Ansible Developer",
+    cardImage: "assets/images/experience-page/Ansible_TCS_DNB.png",
+    place: "TCS-DNB Infrastrure Engineer",
+    time: "(Dec, 2019 - Present)",
+    desp: "<li>Developed multiple playbooks to automate the Infrastrure workloads.</li><li>Automated serveral application deployments and configuration.</li><li>IaC for OS Deployments with OS customizations, CIS hardening and default applications deployments and configurations.</li> <li>Reports generations: for OS Compliances and security, Patching, application deployments and many more.</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    title: "Unix/Linux Platform Engineer",
+    cardImage: "assets/images/experience-page/Linux_TCS_DNB.png",
+    place: "TCS-DNB Infrastrure Engineer",
+    time: "(Feb, 2019 - Present)",
+    desp: "<li>Bash Automations Scripts for Daily operational works.</li><li>Access management by OpenLDAP & RedHat IDM standardized using multiple scripts created and use cases documented which upon shared with L1 resources distributed the workload based on skill level.</li> <li> Worked on many filesystems’ creation/extension, PCS, VCS & Sun Cluster configurations tasks as a part of regular Unix operation tasks.</li>",
   },
 ];
 

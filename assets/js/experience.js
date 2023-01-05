@@ -97,7 +97,7 @@ const showCards = () => {
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
           <h2 class="volunteerTitle">${title}</h2><br>
-          <p class="copy">${description}</p></div>
+          <!-- <p class="copy">${description}</p></div> -->
       
       </div>
       `)

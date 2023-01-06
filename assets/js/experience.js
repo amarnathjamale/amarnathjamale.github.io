@@ -82,7 +82,7 @@ const OperatingSystemscards = [
       
       {
         title: "Oracle Solaris" ,   
-        description: "I have been supporting Solaris 10 and 11 as part of Unix Platform Engineer career. SunOS cluster, ZFS Filesystems, Branded and non branded Zones and other Solaris aspects I have had pleasure of working with.",  
+        description: "I have been supporting Solaris 10 and 11 as part of Unix Platform Engineer career. SunOS cluster, ZFS Filesystems, Branded and non branded Zones and other Solaris aspects I had worked on.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
       },
       

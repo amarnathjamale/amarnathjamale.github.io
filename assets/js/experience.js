@@ -61,54 +61,6 @@ document.addEventListener("DOMContentLoaded", showCards2);
 
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
-
-      {
-        title: "Ansible" ,   
-        description: "Ansible",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
-      },
-      
-      {
-        title: "Azure DevOps" ,   
-        description: "Azure DevOps",  
-        cardImage: "https://cdn.jsdelivr.net/gh/benc-uk/icon-collection/azure-icons/Azure-DevOps.svg",
-      },
-      
-      {
-        title: "Kubernetes" ,   
-        description: "Kubernetes",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
-      },
-      
-      {
-        title: "Docker" ,   
-        description: "Docker",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      },
-      
-      {
-        title: "Podman" ,   
-        description: "Podman",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/podman/podman-original.svg",
-      },
-      
-      {
-        title: "Jenkins" ,   
-        description: "Jenkins",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
-      },
-      
-      {
-        title: "Terraform" ,   
-        description: "Terraform",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
-      },
-      
-      {
-        title: "k3s" ,   
-        description: "k3s",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/k3s/k3s-original.svg",
-      },
          
       {
         title: "Jira" ,   
@@ -466,6 +418,79 @@ const showLanguageCards = () => {
   Languagearsenal.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showLanguageCards);
+
+
+// DevOps Arsenals
+const DevOpsarsenal = document.querySelector(".DevOpsarsenal");
+const DevOpsarsenalcards = [
+      {
+        title: "Ansible" ,   
+        description: "Ansible",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+      },
+      
+      {
+        title: "Azure DevOps" ,   
+        description: "Azure DevOps",  
+        cardImage: "https://cdn.jsdelivr.net/gh/benc-uk/icon-collection/azure-icons/Azure-DevOps.svg",
+      },
+      
+      {
+        title: "Kubernetes" ,   
+        description: "Kubernetes",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+      },
+      
+      {
+        title: "Docker" ,   
+        description: "Docker",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      },
+      
+      {
+        title: "Podman" ,   
+        description: "Podman",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/podman/podman-original.svg",
+      },
+      
+      {
+        title: "Jenkins" ,   
+        description: "Jenkins",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      },
+      
+      {
+        title: "Terraform" ,   
+        description: "Terraform",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+      },
+      
+      {
+        title: "k3s" ,   
+        description: "k3s",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/k3s/k3s-original.svg",
+      },
+
+];
+
+const showDevOpsCards = () => {
+  let output = "";
+  DevOpsarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  DevOpsarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showDevOpsCards);
 
 // Hackathon Section
 

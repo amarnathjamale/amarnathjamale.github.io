@@ -61,104 +61,7 @@ document.addEventListener("DOMContentLoaded", showCards2);
 
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
-      {
-        title: "Azure" ,   
-        description: "Azure",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
-      },
-      
-      {
-        title: "Amazon Web Services" ,   
-        description: "Amazon Web Services",  
-        cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/aws.svg",
-      },
-      
-      {
-        title: "Google Cloud" ,   
-        description: "Google Cloud",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
-      },
-         
-      
-      {
-        title: "Red Hat Ansible Automation Platform" ,   
-        description: "Red Hat Ansible Automation Platform",  
-        cardImage: "assets/images/Arsenal/Red-Hat-AAP.ico",
-      },
-      
-      {
-        title: "Red Hat OpenShift" ,   
-        description: "Red Hat OpenShift",  
-        cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/openshift.svg",
-      },
-      
-      {
-        title: "Red Hat Enterprise Linux" ,   
-        description: "Red Hat Enterprise Linux",  
-        cardImage: "assets/images/Arsenal/Red-Hat-Linux.png",
-      },
-      
-      {
-        title: "Red Hat Satellite" ,   
-        description: "Red Hat Satellite",  
-        cardImage: "assets/images/Arsenal/Red-Hat-Satellite.png",
-      },
-      
-      {
-        title: "Red Hat Identity Management" ,   
-        description: "Red Hat Identity Management",  
-        cardImage: "assets/images/Arsenal/Red-Hat-IDM.png",
-      },
-      
-      {
-        title: "Red Hat Insights" ,   
-        description: "Red Hat Insights",  
-        cardImage: "assets/images/Arsenal/Red-Hat-Insights.png",
-      },
-         
-            
-      {
-        title: "Python" ,   
-        description: "Python",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      },
-      
-      {
-        title: "YAML" ,   
-        description: "YAML",  
-        cardImage: "https://upload.wikimedia.org/wikipedia/commons/6/63/YAML_logo_in_SVG_format.svg",
-      },
-      
-      {
-        title: "Bash" ,   
-        description: "Bash",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
-      },
-      
-      {
-        title: "Markdown" ,   
-        description: "Markdown",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
-      },
-      
-      {
-        title: "HTML5" ,   
-        description: "HTML5",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      },
-      
-      {
-        title: "CSS3" ,   
-        description: "CSS3",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      },
-      
-      {
-        title: "Perl" ,   
-        description: "Perl",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
-      },
-         
+
       {
         title: "Ansible" ,   
         description: "Ansible",  
@@ -496,6 +399,73 @@ const showRedHatCards = () => {
   RedHatarsenal.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showRedHatCards);
+
+
+// Language Arsenals
+const Languagearsenal = document.querySelector(".Languagearsenal");
+const Languagearsenalcards = [ 
+      {
+        title: "Python" ,   
+        description: "Python",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      
+      {
+        title: "YAML" ,   
+        description: "YAML",  
+        cardImage: "https://upload.wikimedia.org/wikipedia/commons/6/63/YAML_logo_in_SVG_format.svg",
+      },
+      
+      {
+        title: "Bash" ,   
+        description: "Bash",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+      },
+      
+      {
+        title: "Markdown" ,   
+        description: "Markdown",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      },
+      
+      {
+        title: "HTML5" ,   
+        description: "HTML5",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      
+      {
+        title: "CSS3" ,   
+        description: "CSS3",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      
+      {
+        title: "Perl" ,   
+        description: "Perl",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
+      },
+
+];
+
+const showLanguageCards = () => {
+  let output = "";
+  Languagearsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  Languagearsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showLanguageCards);
 
 // Hackathon Section
 

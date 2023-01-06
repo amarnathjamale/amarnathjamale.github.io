@@ -416,7 +416,7 @@ const cloudarsenalcards = [
       },
 ];
 
-const showCards = () => {
+const showCards1 = () => {
   let output = "";
   cloudarsenalcards.forEach(
     ({ title, cardImage, description }) =>
@@ -433,7 +433,7 @@ const showCards = () => {
   );
   cloudarsenal.innerHTML = output;
 };
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", showCards1);
 
 // Hackathon Section
 

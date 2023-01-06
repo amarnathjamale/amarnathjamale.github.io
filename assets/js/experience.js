@@ -64,43 +64,43 @@ const OperatingSystemscards = [
 
       {
         title: "Linux" ,   
-        description: "Linux",  
+        description: "My Love for Linux OS keeps on growing as I use it everyday for various purposes like WSL, Containers, Developments and many more. Arch Linux is one of my favourite distro.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
       },
       
       {
         title: "Red Hat" ,   
-        description: "Red Hat",  
+        description: "I have been working on RHEL systems from RHEL6 to 9 since my first day of my Job. Pacemaker, Veritas, XFS filesystmes are some of my daily utilized features of RHEL.",  
         cardImage: "assets/images/Arsenal/Red-Hat.svg",
       },
       
       {
         title: "Windows" ,   
-        description: "Windows",  
+        description: "No caption needed here.",  
         cardImage: "assets/images/Arsenal/windows.ico",
       },
       
       {
         title: "Oracle Solaris" ,   
-        description: "Oracle Solaris",  
+        description: "I have been supporting Solaris 10 and 11 as part of Unix Platform Engineer career. SunOS cluster, ZFS Filesystems, Branded and non branded Zones and other Solaris aspects I have had pleasure of working with.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
       },
       
       {
         title: "Fedora" ,   
-        description: "Fedora",  
+        description: "This is my daily driver OS. Being upstream of RHEL and official support of RedHat, stable and improved development of the Fedora is reason I always recommend it to my friends.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg",
       },
       
       {
         title: "Ubuntu" ,   
-        description: "Ubuntu",  
+        description: "This is my old daily driver. I still use it daily as a part of WSL development setup.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
       },
       
       {
         title: "Android" ,   
-        description: "Android",  
+        description: "I have rooted my Andorid device for modding and customizing with custom OS based AOSP, CAF and LOS. NetHunter, Magisk and Lucky Patcher are my favourite addons for my Android.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
       },
 
@@ -133,19 +133,19 @@ const cloudarsenal = document.querySelector(".cloudarsenal");
 const cloudarsenalcards = [
       {
         title: "Azure" ,   
-        description: "Azure",  
+        description: "As a part of Azure DevOps Engineer, I have been managing Azure portal to support almost all of its components. Certifications: AZ-900, AZ-104, AZ-204, AZ-400",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
       },
       
       {
         title: "Amazon Web Services" ,   
-        description: "Amazon Web Services",  
+        description: "Amazon Web Services has some of personal and coorporate projects that I have worked on.",  
         cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/aws.svg",
       },
-      
+
       {
         title: "Google Cloud" ,   
-        description: "Google Cloud",  
+        description: "I have got my hands on Google Cloud while working on some of the hackathons.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
       },
 ];
@@ -175,37 +175,37 @@ const RedHatarsenal = document.querySelector(".RedHatarsenal");
 const RedHatarsenalcards = [
       {
         title: "Red Hat Ansible Automation Platform" ,   
-        description: "Red Hat Ansible Automation Platform",  
+        description: "I have been managing the RedHat Ansible Automation Platform of 1000+ servers with 80+ projects containing 300+ Automation Roles and templates.",  
         cardImage: "assets/images/Arsenal/Red-Hat-AAP.ico",
       },
-      
+
       {
         title: "Red Hat OpenShift" ,   
-        description: "Red Hat OpenShift",  
+        description: "I have recently started managing and developing the Red Hat OpenShift Platform. I have couple of sandbox projects on Openshift where I have deployed and managed from the entire applications",  
         cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/openshift.svg",
       },
-      
+
       {
         title: "Red Hat Enterprise Linux" ,   
-        description: "Red Hat Enterprise Linux",  
+        description: "I have been deploying and managing RHEL6 to RHEL9 servers for 4 Years now. I have many automations projects targeting RHEL machines to make them IaC deployments standarized.",  
         cardImage: "assets/images/Arsenal/Red-Hat-Linux.png",
       },
       
       {
         title: "Red Hat Satellite" ,   
-        description: "Red Hat Satellite",  
+        description: "I have managed Red Hat Satellite platform with 1000+ servers for repository and package managements. I have also managed the IaC codes for Satellite deployments via Kickstarter templates.",  
         cardImage: "assets/images/Arsenal/Red-Hat-Satellite.png",
       },
       
       {
         title: "Red Hat Identity Management" ,   
-        description: "Red Hat Identity Management",  
+        description: "User mangement, Access management and DNS management are some of the things I have worked on with Red Hat Identity Management. I have also deployed some of the automations for auto access configurations with RedHat IDM at the time of deployments as IaC.",  
         cardImage: "assets/images/Arsenal/Red-Hat-IDM.png",
       },
       
       {
         title: "Red Hat Insights" ,   
-        description: "Red Hat Insights",  
+        description: "I have been utilizing the RedHat console and Insights for managing the overview of Infrastrure for Vulnerability management.",  
         cardImage: "assets/images/Arsenal/Red-Hat-Insights.png",
       },
 

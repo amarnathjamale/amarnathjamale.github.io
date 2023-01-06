@@ -395,6 +395,7 @@ document.addEventListener("DOMContentLoaded", showCards);
 
 // Arsenals Section
 
+// Cloud Arsenals
 const cloudarsenal = document.querySelector(".cloudarsenal");
 const cloudarsenalcards = [
       {
@@ -416,7 +417,7 @@ const cloudarsenalcards = [
       },
 ];
 
-const showCards1 = () => {
+const showCloudCards = () => {
   let output = "";
   cloudarsenalcards.forEach(
     ({ title, cardImage, description }) =>
@@ -433,7 +434,68 @@ const showCards1 = () => {
   );
   cloudarsenal.innerHTML = output;
 };
-document.addEventListener("DOMContentLoaded", showCards1);
+document.addEventListener("DOMContentLoaded", showCloudCards);
+
+
+// RedHat Arsenals
+const RedHatarsenal = document.querySelector(".RedHatarsenal");
+const RedHatarsenalcards = [
+      {
+        title: "Red Hat Ansible Automation Platform" ,   
+        description: "Red Hat Ansible Automation Platform",  
+        cardImage: "assets/images/Arsenal/Red-Hat-AAP.ico",
+      },
+      
+      {
+        title: "Red Hat OpenShift" ,   
+        description: "Red Hat OpenShift",  
+        cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/openshift.svg",
+      },
+      
+      {
+        title: "Red Hat Enterprise Linux" ,   
+        description: "Red Hat Enterprise Linux",  
+        cardImage: "assets/images/Arsenal/Red-Hat-Linux.png",
+      },
+      
+      {
+        title: "Red Hat Satellite" ,   
+        description: "Red Hat Satellite",  
+        cardImage: "assets/images/Arsenal/Red-Hat-Satellite.png",
+      },
+      
+      {
+        title: "Red Hat Identity Management" ,   
+        description: "Red Hat Identity Management",  
+        cardImage: "assets/images/Arsenal/Red-Hat-IDM.png",
+      },
+      
+      {
+        title: "Red Hat Insights" ,   
+        description: "Red Hat Insights",  
+        cardImage: "assets/images/Arsenal/Red-Hat-Insights.png",
+      },
+
+];
+
+const showRedHatCards = () => {
+  let output = "";
+  RedHatarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  RedHatarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showRedHatCards);
 
 // Hackathon Section
 

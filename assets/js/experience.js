@@ -392,6 +392,49 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
+
+// Arsenals Section
+
+const cloudarsenal = document.querySelector(".cloudarsenal");
+const cloudarsenalcards = [
+      {
+        title: "Azure" ,   
+        description: "Azure",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+      },
+      
+      {
+        title: "Amazon Web Services" ,   
+        description: "Amazon Web Services",  
+        cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/aws.svg",
+      },
+      
+      {
+        title: "Google Cloud" ,   
+        description: "Google Cloud",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+      },
+];
+
+const showCards = () => {
+  let output = "";
+  cloudarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  cloudarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showCards);
+
 // Hackathon Section
 
 const hackathonsection = document.querySelector(".hackathon-section");

@@ -199,7 +199,7 @@ const RedHatarsenalcards = [
       
       {
         title: "Red Hat Identity Management" ,   
-        description: "User mangement, Access management and DNS management are some of the things I have worked on with Red Hat Identity Management. I have also deployed some of the automations for auto access configurations with RedHat IDM at the time of deployments as IaC.",  
+        description: "User mangement, Access management, DNS management and Automated access configurations with Ansible are some of the things I have worked on with Red Hat Identity Management.",  
         cardImage: "assets/images/Arsenal/Red-Hat-IDM.png",
       },
       

@@ -57,39 +57,58 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-// Volunteership Cards
+// OperatingSystems Cards
 
-const volunteership = document.querySelector(".volunteership");
-const volunteershipcards = [
-  {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
-    description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
-  },
-  {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
-    description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
-  },
-  {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
-    description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
-  },
-  {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
-    description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
-  },
+const OperatingSystems = document.querySelector(".OperatingSystems");
+const OperatingSystemscards = [
+
+      {
+        title: "Linux" ,   
+        description: "My Love for Linux OS keeps on growing as I use it everyday for various purposes like WSL, Containers, Developments and many more. Arch Linux is one of my favourite distro.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      },
+      
+      {
+        title: "Red Hat" ,   
+        description: "I have been working on RHEL systems from RHEL6 to 9 since my first day of my Job. Pacemaker, Veritas, XFS filesystmes are some of my daily utilized features of RHEL.",  
+        cardImage: "assets/images/Arsenal/Red-Hat.svg",
+      },
+      
+      {
+        title: "Windows" ,   
+        description: "No caption needed here.",  
+        cardImage: "assets/images/Arsenal/windows.ico",
+      },
+      
+      {
+        title: "Oracle Solaris" ,   
+        description: "I have been supporting Solaris 10 and 11 as part of Unix Platform Engineer career. SunOS cluster, ZFS Filesystems, Branded and non branded Zones and other Solaris aspects I had worked on.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+      },
+      
+      {
+        title: "Fedora" ,   
+        description: "This is my daily driver OS. Being upstream of RHEL and official support of RedHat, stable and improved development of the Fedora is reason I always recommend it to my friends.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg",
+      },
+      
+      {
+        title: "Ubuntu" ,   
+        description: "This is my old daily driver. I still use it daily as a part of WSL development setup.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
+      },
+      
+      {
+        title: "Android" ,   
+        description: "I have rooted my Andorid device for modding and customizing with custom OS based AOSP, CAF and LOS. NetHunter, Magisk and Lucky Patcher are my favourite addons for my Android.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+      },
+
 ];
 
 const showCards = () => {
   let output = "";
-  volunteershipcards.forEach(
+  OperatingSystemscards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
@@ -102,9 +121,395 @@ const showCards = () => {
       </div>
       `)
   );
-  volunteership.innerHTML = output;
+  OperatingSystems.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards);
+
+
+// Arsenals Section
+
+// Cloud Arsenals
+const cloudarsenal = document.querySelector(".cloudarsenal");
+const cloudarsenalcards = [
+      {
+        title: "Azure" ,   
+        description: "As a part of Azure DevOps Engineer, I have been managing Azure portal to support almost all of its components. Certifications: AZ-900, AZ-104, AZ-204, AZ-400",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+      },
+      
+      {
+        title: "Amazon Web Services" ,   
+        description: "Amazon Web Services has some of personal and coorporate projects that I have worked on.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/aws.svg",
+      },
+
+      {
+        title: "Google Cloud" ,   
+        description: "I have got my hands on Google Cloud while working on some of the hackathons.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+      },
+];
+
+const showCloudCards = () => {
+  let output = "";
+  cloudarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  cloudarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showCloudCards);
+
+
+// RedHat Arsenals
+const RedHatarsenal = document.querySelector(".RedHatarsenal");
+const RedHatarsenalcards = [
+      {
+        title: "Red Hat Ansible Automation Platform" ,   
+        description: "I have been managing the RedHat Ansible Automation Platform of 1000+ servers with 80+ projects containing 300+ Automation Roles and templates.",  
+        cardImage: "assets/images/Arsenal/Red-Hat-AAP.ico",
+      },
+
+      {
+        title: "Red Hat OpenShift" ,   
+        description: "I have recently started managing and developing the Red Hat OpenShift Platform. I have couple of sandbox projects on Openshift where I have deployed and managed from the entire applications",  
+        cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/openshift.svg",
+      },
+
+      {
+        title: "Red Hat Enterprise Linux" ,   
+        description: "I have been deploying and managing RHEL6 to RHEL9 servers for 4 Years now. I have many automations projects targeting RHEL machines to make them IaC deployments standarized.",  
+        cardImage: "assets/images/Arsenal/Red-Hat-Linux.png",
+      },
+      
+      {
+        title: "Red Hat Satellite" ,   
+        description: "I have managed Red Hat Satellite platform with 1000+ servers for repository and package managements. I have also managed the IaC codes for Satellite deployments via Kickstarter templates.",  
+        cardImage: "assets/images/Arsenal/Red-Hat-Satellite.png",
+      },
+      
+      {
+        title: "Red Hat Identity Management" ,   
+        description: "User mangement, Access management, DNS management and Automated access configurations with Ansible are some of the things I have worked on with IDM.",  
+        cardImage: "assets/images/Arsenal/Red-Hat-IDM.png",
+      },
+      
+      {
+        title: "Red Hat Insights" ,   
+        description: "I have been utilizing the RedHat console and Insights for managing the overview of Infrastrure for Vulnerability management.",  
+        cardImage: "assets/images/Arsenal/Red-Hat-Insights.png",
+      },
+
+];
+
+const showRedHatCards = () => {
+  let output = "";
+  RedHatarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  RedHatarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showRedHatCards);
+
+
+// Language Arsenals
+const Languagearsenal = document.querySelector(".Languagearsenal");
+const Languagearsenalcards = [ 
+      {
+        title: "Python" ,   
+        description: "Python",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      
+      {
+        title: "YAML" ,   
+        description: "YAML",  
+        cardImage: "https://upload.wikimedia.org/wikipedia/commons/6/63/YAML_logo_in_SVG_format.svg",
+      },
+      
+      {
+        title: "Bash" ,   
+        description: "Bash",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+      },
+      
+      {
+        title: "Markdown" ,   
+        description: "Markdown",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      },
+      
+      {
+        title: "HTML5" ,   
+        description: "HTML5",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      
+      {
+        title: "CSS3" ,   
+        description: "CSS3",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      
+      {
+        title: "Perl" ,   
+        description: "Perl",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
+      },
+
+];
+
+const showLanguageCards = () => {
+  let output = "";
+  Languagearsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  Languagearsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showLanguageCards);
+
+
+// DevOps Arsenals
+const DevOpsarsenal = document.querySelector(".DevOpsarsenal");
+const DevOpsarsenalcards = [
+      {
+        title: "Ansible" ,   
+        description: "Ansible",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+      },
+      
+      {
+        title: "Azure DevOps" ,   
+        description: "Azure DevOps",  
+        cardImage: "https://cdn.jsdelivr.net/gh/benc-uk/icon-collection/azure-icons/Azure-DevOps.svg",
+      },
+      
+      {
+        title: "Kubernetes" ,   
+        description: "Kubernetes",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+      },
+      
+      {
+        title: "Docker" ,   
+        description: "Docker",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      },
+      
+      {
+        title: "Podman" ,   
+        description: "Podman",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/podman/podman-original.svg",
+      },
+      
+      {
+        title: "Jenkins" ,   
+        description: "Jenkins",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      },
+      
+      {
+        title: "Terraform" ,   
+        description: "Terraform",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+      },
+      
+      {
+        title: "k3s" ,   
+        description: "k3s",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/k3s/k3s-original.svg",
+      },
+
+];
+
+const showDevOpsCards = () => {
+  let output = "";
+  DevOpsarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  DevOpsarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showDevOpsCards);
+
+// Operational Arsenals
+const Operationalarsenal = document.querySelector(".Operationalarsenal");
+const Operationalarsenalcards = [
+      {
+        title: "Jira" ,   
+        description: "Jira",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+      },
+      
+      {
+        title: "Confluence" ,   
+        description: "Confluence",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg",
+      },
+      
+      {
+        title: "BitBucket" ,   
+        description: "BitBucket",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
+      },
+      {
+        title: "Azure Repos" ,   
+        description: "Azure Repos",  
+        cardImage: "assets/images/Arsenal/repos.ico",
+      },
+      
+      {
+        title: "Azure Pipelines" ,   
+        description: "Azure Pipelines",  
+        cardImage: "assets/images/Arsenal/pipelines.ico",
+      },
+      
+      {
+        title: "Azure Functions" ,   
+        description: "Azure Functions",  
+        cardImage: "assets/images/Arsenal/function.ico",
+      },
+      
+      {
+        title: "Azure Boards" ,   
+        description: "Azure Boards",  
+        cardImage: "assets/images/Arsenal/boards.ico",
+      },
+      
+      {
+        title: "Azure TestPlans" ,   
+        description: "Azure TestPlans",  
+        cardImage: "assets/images/Arsenal/testplans.ico",
+      },
+      
+      {
+        title: "Azure Artifacts" ,   
+        description: "Azure Artifacts",  
+        cardImage: "assets/images/Arsenal/artifacts.ico",
+      },
+      {
+        title: "Git" ,   
+        description: "Git",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      
+      {
+        title: "GitLab" ,   
+        description: "GitLab",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+      },
+      
+      {
+        title: "GitHub" ,   
+        description: "GitHub",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        title: "Visual Studio" ,   
+        description: "Visual Studio",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
+      },
+      
+      {
+        title: "Visual Studio Code" ,   
+        description: "Visual Studio Code",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      },
+      
+      {
+        title: "Vim" ,   
+        description: "Vim",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+      },
+            
+      {
+        title: "Terminal" ,   
+        description: "Terminal",  
+        cardImage: "assets/images/Arsenal/terminal.ico",
+      },
+      
+      {
+        title: "Jupyter" ,   
+        description: "Jupyter",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      },
+      
+      {
+        title: "Tensorflow" ,   
+        description: "Tensorflow",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      
+      {
+        title: "Microsoft Power Apps" ,   
+        description: "Microsoft Power Apps",  
+        cardImage: "assets/images/Arsenal/powerapps.ico",
+      },
+      
+      {
+        title: "Microsoft Power Automate" ,   
+        description: "Microsoft Power Automate",  
+        cardImage: "assets/images/Arsenal/automate.ico",
+      },
+
+];
+
+const showOperationalCards = () => {
+  let output = "";
+  Operationalarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  Operationalarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showOperationalCards);
 
 // Hackathon Section
 

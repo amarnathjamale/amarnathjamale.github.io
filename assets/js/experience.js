@@ -57,103 +57,11 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-// Volunteership Cards
+// OperatingSystems Cards
 
-const volunteership = document.querySelector(".volunteership");
-const volunteershipcards = [
-         
-      {
-        title: "Jira" ,   
-        description: "Jira",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
-      },
-      
-      {
-        title: "Confluence" ,   
-        description: "Confluence",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg",
-      },
-      
-      {
-        title: "BitBucket" ,   
-        description: "BitBucket",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
-      },
-      {
-        title: "Azure Repos" ,   
-        description: "Azure Repos",  
-        cardImage: "assets/images/Arsenal/repos.ico",
-      },
-      
-      {
-        title: "Azure Pipelines" ,   
-        description: "Azure Pipelines",  
-        cardImage: "assets/images/Arsenal/pipelines.ico",
-      },
-      
-      {
-        title: "Azure Functions" ,   
-        description: "Azure Functions",  
-        cardImage: "assets/images/Arsenal/function.ico",
-      },
-      
-      {
-        title: "Azure Boards" ,   
-        description: "Azure Boards",  
-        cardImage: "assets/images/Arsenal/boards.ico",
-      },
-      
-      {
-        title: "Azure TestPlans" ,   
-        description: "Azure TestPlans",  
-        cardImage: "assets/images/Arsenal/testplans.ico",
-      },
-      
-      {
-        title: "Azure Artifacts" ,   
-        description: "Azure Artifacts",  
-        cardImage: "assets/images/Arsenal/artifacts.ico",
-      },
-      {
-        title: "Git" ,   
-        description: "Git",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
-      
-      {
-        title: "GitLab" ,   
-        description: "GitLab",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
-      },
-      
-      {
-        title: "GitHub" ,   
-        description: "GitHub",  
-        cardImage: "https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png#gh-light-mode-only",
-      },
-      
-      {
-        title: "GitHub" ,   
-        description: "GitHub",  
-        cardImage: "https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png#gh-dark-mode-only",
-      },
-      {
-        title: "Visual Studio" ,   
-        description: "Visual Studio",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
-      },
-      
-      {
-        title: "Visual Studio Code" ,   
-        description: "Visual Studio Code",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-      },
-      
-      {
-        title: "Vim" ,   
-        description: "Vim",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
-      },
+const OperatingSystems = document.querySelector(".OperatingSystems");
+const OperatingSystemscards = [
+
       {
         title: "Linux" ,   
         description: "Linux",  
@@ -200,7 +108,7 @@ const volunteershipcards = [
 
 const showCards = () => {
   let output = "";
-  volunteershipcards.forEach(
+  OperatingSystemscards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
@@ -213,7 +121,7 @@ const showCards = () => {
       </div>
       `)
   );
-  volunteership.innerHTML = output;
+  OperatingSystems.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards);
 

@@ -195,37 +195,7 @@ const volunteershipcards = [
         description: "Android",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
       },
-      
-      {
-        title: "Terminal" ,   
-        description: "Terminal",  
-        cardImage: "assets/images/Arsenal/terminal.ico",
-      },
-      
-      {
-        title: "Jupyter" ,   
-        description: "Jupyter",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
-      },
-      
-      {
-        title: "Tensorflow" ,   
-        description: "Tensorflow",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-      },
-      
-      {
-        title: "Microsoft Power Apps" ,   
-        description: "Microsoft Power Apps",  
-        cardImage: "assets/images/Arsenal/powerapps.ico",
-      },
-      
-      {
-        title: "Microsoft Power Automate" ,   
-        description: "Microsoft Power Automate",  
-        cardImage: "assets/images/Arsenal/automate.ico",
-      },
-      
+
 ];
 
 const showCards = () => {
@@ -491,6 +461,147 @@ const showDevOpsCards = () => {
   DevOpsarsenal.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showDevOpsCards);
+
+// Operational Arsenals
+const Operationalarsenal = document.querySelector(".Operationalarsenal");
+const Operationalarsenalcards = [
+      {
+        title: "Jira" ,   
+        description: "Jira",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+      },
+      
+      {
+        title: "Confluence" ,   
+        description: "Confluence",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg",
+      },
+      
+      {
+        title: "BitBucket" ,   
+        description: "BitBucket",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
+      },
+      {
+        title: "Azure Repos" ,   
+        description: "Azure Repos",  
+        cardImage: "assets/images/Arsenal/repos.ico",
+      },
+      
+      {
+        title: "Azure Pipelines" ,   
+        description: "Azure Pipelines",  
+        cardImage: "assets/images/Arsenal/pipelines.ico",
+      },
+      
+      {
+        title: "Azure Functions" ,   
+        description: "Azure Functions",  
+        cardImage: "assets/images/Arsenal/function.ico",
+      },
+      
+      {
+        title: "Azure Boards" ,   
+        description: "Azure Boards",  
+        cardImage: "assets/images/Arsenal/boards.ico",
+      },
+      
+      {
+        title: "Azure TestPlans" ,   
+        description: "Azure TestPlans",  
+        cardImage: "assets/images/Arsenal/testplans.ico",
+      },
+      
+      {
+        title: "Azure Artifacts" ,   
+        description: "Azure Artifacts",  
+        cardImage: "assets/images/Arsenal/artifacts.ico",
+      },
+      {
+        title: "Git" ,   
+        description: "Git",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      
+      {
+        title: "GitLab" ,   
+        description: "GitLab",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+      },
+      
+      {
+        title: "GitHub" ,   
+        description: "GitHub",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        title: "Visual Studio" ,   
+        description: "Visual Studio",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
+      },
+      
+      {
+        title: "Visual Studio Code" ,   
+        description: "Visual Studio Code",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      },
+      
+      {
+        title: "Vim" ,   
+        description: "Vim",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+      },
+            
+      {
+        title: "Terminal" ,   
+        description: "Terminal",  
+        cardImage: "assets/images/Arsenal/terminal.ico",
+      },
+      
+      {
+        title: "Jupyter" ,   
+        description: "Jupyter",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      },
+      
+      {
+        title: "Tensorflow" ,   
+        description: "Tensorflow",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      },
+      
+      {
+        title: "Microsoft Power Apps" ,   
+        description: "Microsoft Power Apps",  
+        cardImage: "assets/images/Arsenal/powerapps.ico",
+      },
+      
+      {
+        title: "Microsoft Power Automate" ,   
+        description: "Microsoft Power Automate",  
+        cardImage: "assets/images/Arsenal/automate.ico",
+      },
+
+];
+
+const showOperationalCards = () => {
+  let output = "";
+  Operationalarsenalcards.forEach(
+    ({ title, cardImage, description }) =>
+      (output += `        
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
+      
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
+      <div class="content">
+          <h2 class="volunteerTitle">${title}</h2><br>
+          <p class="copy">${description}</p></div>
+      
+      </div>
+      `)
+  );
+  Operationalarsenal.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showOperationalCards);
 
 // Hackathon Section
 

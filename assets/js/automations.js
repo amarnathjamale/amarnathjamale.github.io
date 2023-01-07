@@ -184,7 +184,7 @@ const fillData = () => {
                         </button>
                 
                         <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
-                            CITE
+                            DISCRIPTION
                         </button>
                     </div>
                     <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">

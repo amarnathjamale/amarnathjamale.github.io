@@ -22,17 +22,17 @@ const research = [
   },
 
   {
-    title: "A Call for More Rigor in Unsupervised Cross-lingual Learning",
+    title: "Ansible: RedHat System Hardening as per CIS Level 2 Guidelines",
     authors:
-      "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre",
+      "Amarnath Jamale",
     conferences:
-      "The 58th Annual Meeting of the Association for Computational Linguistics",
-    researchYr: 2020,
+      "OS Hardening, IaC, Automated Reporting",
+    researchYr: 2022,
     citebox: "popup2",
-    image: "assets/images/research-page/crossLingual.png",
+    image: "assets/images/Automations/CIS_Ansible_RedHat.png",
     citation: {
       vancouver:
-        "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre. A Call for More Rigor in Unsupervised Cross-lingual Learning. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
+        ".",
     },
     abstract:
       "This is currently left empty and this can be considered as a dummy data 2",

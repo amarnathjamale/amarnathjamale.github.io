@@ -6,22 +6,22 @@ const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
     title: "Azure DevOps Engineer",
-    cardImage: "assets/images/experience-page/Azure-Devops_TCS_DNB.png",
-    place: "TCS-DNB Infrastrure Engineer",
+    cardImage: "assets/images/experience-page/TCS_Azure_DevOps.png",
+    place: "Tata Consultancy Services Ltd.",
     time: "(May, 2020 - Present)",
     desp: "<li>Developed multiple Azure Pipelines to have a CICD deployment for several applications.</li> <li>Utlized Biceps for pipeline deployments.</li> <li>Migrated multiple OnPrem workloads to Azure and standardized them via pipeline.</li> <li>Azure Administrator support for Cloud Workload.</li>",
   },
   {
     title: "Ansible Developer",
-    cardImage: "assets/images/experience-page/Ansible_TCS_DNB.png",
-    place: "TCS-DNB Infrastrure Engineer",
+    cardImage: "assets/images/experience-page/TCS_Ansible_Developer.png",
+    place: "Tata Consultancy Services Ltd.",
     time: "(Dec, 2019 - Present)",
     desp: "<li>Developed multiple playbooks to automate the Infrastrure workloads.</li><li>Automated serveral application deployments and configuration.</li><li>IaC for OS Deployments with OS customizations, CIS hardening and default applications deployments and configurations.</li> <li>Reports generations: for OS Compliances and security, Patching, application deployments and many more.</li>",
   },
   {
     title: "Unix/Linux Platform Engineer",
-    cardImage: "assets/images/experience-page/Linux_TCS_DNB.png",
-    place: "TCS-DNB Infrastrure Engineer",
+    cardImage: "assets/images/experience-page/TCS_Unix_Platform_Engineer.png",
+    place: "Tata Consultancy Services Ltd.",
     time: "(Feb, 2019 - Present)",
     desp: "<li>Bash Automations Scripts for Daily operational works.</li><li>Access management by OpenLDAP & RedHat IDM standardized using multiple scripts created and use cases documented which upon shared with L1 resources distributed the workload based on skill level.</li> <li> Worked on many filesystems’ creation/extension, PCS, VCS & Sun Cluster configurations tasks as a part of regular Unix operation tasks.</li>",
   },

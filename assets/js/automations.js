@@ -11,7 +11,7 @@ const research = [
       "Application Deployment, IaC",
     researchYr: 2019,
     citebox: "popup1",
-    image: "assets/images/Automations/Ansible_DT_AZ.png",
+    image: "assets/images/Automations/DT_Ansible_Azure.png",
     citation: {
       vancouver:
         "This deployment focused on zero human interventions. The parameters required for Dynatrace installation are fetched from the Azure Tags and Satellite Environments. The Deployments also creates a seperate Filesystem for Dynatrace. It also features the Agent and Custom client approved modules and scripts deployments to enhance the Dynatrace monitoring to support application monitoring.",

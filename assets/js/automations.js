@@ -4,20 +4,20 @@ const researchTable = document.querySelector(".main");
 
 const research = [
   {
-    title: "A Batch Normalized Inference Network Keeps the KL Vanishing Away",
+    title: "Ansible: Dynatrace Fully Automated Installation",
     authors:
-      "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu",
+      "Amarnath Jamale",
     conferences:
-      "The 58th Annual Meeting of the Association for Computational Linguistics",
-    researchYr: 2020,
+      "Application Deployment, IaC",
+    researchYr: 2019,
     citebox: "popup1",
-    image: "assets/images/research-page/inteferenceNetwork.png",
+    image: "assets/images/Automations/Dynatrace.svg",
     citation: {
       vancouver:
-        "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu. A Batch Normalized Inference Network Keeps the KL Vanishing Away. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
+        "This deployment focused on zero human interventions. The parameters required for Dynatrace installation are fetched from the Azure Tags and Satellite Environments. The Deployments also creates a seperate Filesystem for Dynatrace. It also features the Agent and Custom client approved modules and scripts deployments to enhance the Dynatrace monitoring to support application monitoring.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 1",
+      "A Fully Automated Dynatrace Installation using Ansible And Azure Tags as a part of build deployments.1",
     absbox: "absPopup1",
   },
 

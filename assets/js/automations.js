@@ -9,7 +9,7 @@ const research = [
       "Tools: Ansible, Azure, Dynatrace, RHEL",
     conferences:
       "Tags: Application Deployment, IaC",
-    researchYr: 2019,
+    researchYr: 2020,
     citebox: "popup1",
     image: "assets/images/Automations/DT_Ansible_Azure.png",
     citation: {
@@ -45,7 +45,7 @@ const research = [
     authors: "Tools: Ansible, Satellite, ServiceNow, Insights",
     conferences:
       "Tags: Compliance Management, OS Patching, IaC",
-    researchYr: 2020,
+    researchYr: 2019,
     citebox: "popup3",
     image: "assets/images/Automations/Patching_ansible_satellite_snow.png",
     citation: {
@@ -59,20 +59,20 @@ const research = [
 
   {
     title:
-      "A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking",
+      "Autosys Autamated Installation",
     authors:
-      "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou",
+      "Tools: Ansible, Autosys, Satellite",
     conferences:
-      "The 58th Annual Meeting of the Association for Computational Linguistics",
-    researchYr: 2020,
+      "Tags: Application Deployment, IaC, Automated Reporting",
+    researchYr: 2021,
     citebox: "popup4",
-    image: "assets/images/research-page/dialogueState.png",
+    image: "assets/images/Automations/Autosys_Ansible_Satellite.png",
     citation: {
       vancouver:
-        "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou. A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
+        "The automation utilizes the Satellite to fetch the latest installation setups and deploy it on the targeted hosts. It dynamically customizes the installation based on the host and environment. This also generates a dynamically customized report of installation to necessary recepients.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 4",
+      "An Automation for Autosys Deployment ulitizing Satellite and Ansible.",
     absbox: "absPopup4",
   },
 

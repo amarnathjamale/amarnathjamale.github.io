@@ -4,11 +4,11 @@ const researchTable = document.querySelector(".main");
 
 const research = [
   {
-    title: "Ansible: Dynatrace Fully Automated Installation",
+    title: "Fully Automated and Customized Dynatrace Installation",
     authors:
-      "Amarnath Jamale",
+      "Tools: Ansible, Azure, Dynatrace, RHEL",
     conferences:
-      "Application Deployment, IaC",
+      "Tags: Application Deployment, IaC",
     researchYr: 2019,
     citebox: "popup1",
     image: "assets/images/Automations/DT_Ansible_Azure.png",
@@ -22,38 +22,38 @@ const research = [
   },
 
   {
-    title: "Ansible: RedHat System Hardening as per CIS Level 2 Guidelines",
+    title: "RedHat System Hardening as per CIS Level 2 Guidelines",
     authors:
-      "Amarnath Jamale",
+      "Tools: Ansible, CIS2 Fremework",
     conferences:
-      "OS Hardening, IaC, Automated Reporting",
+      "Tags: OS Hardening, IaC, Automated Reporting",
     researchYr: 2022,
     citebox: "popup2",
     image: "assets/images/Automations/CIS_Ansible_RedHat.png",
     citation: {
       vancouver:
-        ".",
+        "The automation focuses on implementing the OS hardening with CIS Level 2 Benchmarks. The automation also supports the applying specific CCE on the fly. The automation deploys the CIS Level 2 benchmark with latest rules fetched dynamically without internet. It also provides a periodic reports from all servers and highlights the missing the CIS Rules and generates a dynamic playbook for deploying those rules on servers. It also gives client an option to apply only approved CIS Rules, ignore rejected Rules and allow specific exceptions.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 2",
+      "This automation makes hardening the OS smooth and standardized with periodic scanning of environment, reporting and applying of missing CIS Rules giving client the most secure platform.",
     absbox: "absPopup2",
   },
 
   {
     title:
-      "A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks",
-    authors: "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis",
+      "Dynamic and Fully Automated RHEL OS patching",
+    authors: "Tools: Ansible, Satellite, ServiceNow, Insights",
     conferences:
-      "The 58th Annual Meeting of the Association for Computational Linguistics",
+      "Tags: Compliance Management, OS Patching, IaC",
     researchYr: 2020,
     citebox: "popup3",
-    image: "assets/images/research-page/wordRepresentation.png",
+    image: "assets/images/Automations/Patching_ansible_satellite_snow.png",
     citation: {
       vancouver:
-        "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis. A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
+        "This automation targets a fully automated, highly customized and timely scheduled OS Patching that integrates with ServiceNow, Satellite and Ansible. The automation promotes and publishes the Content Views on RedHat Satellite using Ansible Automation Platform. It also creates and schedules the change request on ServiceNow and sends Patching Notification mail to all necessary recepients. It also stops or failover the application services to passive nodes. It also features patching of day 0 erratas within a day across platform.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 3",
+      "An Automated patching Automation with featuring ServiceNow, RedHat Satellite and Ansible Automation Platform with support to custom errata patching and segregated groups of servers to minimize the downtime.",
     absbox: "absPopup3",
   },
 

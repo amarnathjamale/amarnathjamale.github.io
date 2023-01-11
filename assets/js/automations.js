@@ -78,7 +78,7 @@ const research = [
 
   {
     title: "CyberArk PSM for SSH Installation",
-    authors: "Tools: Ansible, CyberArk, Satellite",
+    authors: "Tools: Ansible, CyberArk, Satellite, Azure DevOps",
     conferences:
       "Tags: Application Deployment, IaaC",
     researchYr: 2020,

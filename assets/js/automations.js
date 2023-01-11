@@ -8,7 +8,7 @@ const research = [
     authors:
       "Tools: Ansible, Azure, Dynatrace, RHEL",
     conferences:
-      "Tags: Application Deployment, IaC",
+      "Tags: Application Deployment, IaaC",
     researchYr: 2020,
     citebox: "popup1",
     image: "assets/images/Automations/DT_Ansible_Azure.png",
@@ -22,17 +22,17 @@ const research = [
   },
 
   {
-    title: "RedHat System Hardening as per CIS Level 2 Guidelines",
+    title: "RedHat System Hardening as per CIS Guidelines",
     authors:
       "Tools: Ansible, CIS2 Fremework",
     conferences:
-      "Tags: OS Hardening, IaC, Automated Reporting",
+      "Tags: OS Hardening, IaaC, Automated Reporting",
     researchYr: 2022,
     citebox: "popup2",
     image: "assets/images/Automations/CIS_Ansible_RedHat.png",
     citation: {
       vancouver:
-        "The automation focuses on implementing the OS hardening with CIS Level 2 Benchmarks. The automation also supports the applying specific CCE on the fly. The automation deploys the CIS Level 2 benchmark with latest rules fetched dynamically without internet. It also provides a periodic reports from all servers and highlights the missing the CIS Rules and generates a dynamic playbook for deploying those rules on servers. It also gives client an option to apply only approved CIS Rules, ignore rejected Rules and allow specific exceptions.",
+        "The automation focuses on implementing the OS hardening with CIS Benchmarks. The automation also supports the applying specific CCE on the fly. The automation deploys the CIS benchmark with latest rules fetched dynamically without internet. It also provides a periodic reports from all servers and highlights the missing the CIS Rules and generates a dynamic playbook for deploying those rules on servers. It also gives client an option to apply only approved CIS Rules, ignore rejected Rules and allow specific exceptions.",
     },
     abstract:
       "This automation makes hardening the OS smooth and standardized with periodic scanning of environment, reporting and applying of missing CIS Rules giving client the most secure platform.",
@@ -44,7 +44,7 @@ const research = [
       "Dynamic and Fully Automated RHEL OS patching",
     authors: "Tools: Ansible, Satellite, ServiceNow, Insights",
     conferences:
-      "Tags: Compliance Management, OS Patching, IaC",
+      "Tags: Compliance Management, OS Patching, IaaC",
     researchYr: 2019,
     citebox: "popup3",
     image: "assets/images/Automations/Patching_ansible_satellite_snow.png",
@@ -63,7 +63,7 @@ const research = [
     authors:
       "Tools: Ansible, Autosys, Satellite",
     conferences:
-      "Tags: Application Deployment, IaC, Automated Reporting",
+      "Tags: Application Deployment, IaaC, Automated Reporting",
     researchYr: 2021,
     citebox: "popup4",
     image: "assets/images/Automations/Autosys_Ansible_Satellite.png",
@@ -77,19 +77,19 @@ const research = [
   },
 
   {
-    title: "Dual Super-Resolution Learning for Semantic Segmentation",
-    authors: "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi",
+    title: "CyberArk PSM for SSH Installation",
+    authors: "Tools: Ansible, CyberArk, Satellite, Azure DevOps",
     conferences:
-      "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-    researchYr: 2020,
+      "Tags: Application Deployment, IaaC",
+    researchYr: 2022,
     citebox: "popup5",
-    image: "assets/images/research-page/semanticSegmentation.png",
+    image: "assets/images/Automations/CyberArk_Ansible_Azure_Satellite.png",
     citation: {
       vancouver:
-        "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi. Dual Super-Resolution Learning for Semantic Segmentation. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
+        "The automation targets towards fully deploying of Server using Azure Pipeline and deploy the CyberArk PSMP application at the build time. The automation also configures PSMP application. The automation supports dynamic upgradation of application and redeploying of the whole PSMP infrastructure on the fly.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 5",
+      "Dynamic installation of the PSMP application along with infrastrure deployment.",
     absbox: "absPopup5",
   },
 

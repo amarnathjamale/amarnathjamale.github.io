@@ -89,24 +89,24 @@ const research = [
         "The automation targets towards fully deploying of Server using Azure Pipeline and deploy the CyberArk PSMP application at the build time. The automation also configures PSMP application. The automation supports dynamic upgradation of application and redeploying of the whole PSMP infrastructure on the fly.",
     },
     abstract:
-      "Dynamic installation of the PSMP application along with infrastrure deployment.",
+      "Dynamic installation of the CyberArk PSMP application along with infrastrure deployment.",
     absbox: "absPopup5",
   },
 
   {
-    title: "Deep Unfolding Network for Image Super-Resolution",
-    authors: "Zhang, Kai and Van Gool, Luc and Timofte, Radu",
+    title: "CyberArk PTA Installation",
+    authors: "Tools: Ansible, CyberArk, Satellite, Azure DevOps",
     conferences:
-      "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-    researchYr: 2020,
+      "Tags: Application Deployment, IaaC",
+    researchYr: 2022,
     citebox: "popup6",
-    image: "assets/images/research-page/deepNetwork.png",
+    image: "assets/images/Automations/CyberArk_Ansible_Azure_Satellite.png",
     citation: {
       vancouver:
-        "Zhang, Kai and Van Gool, Luc and Timofte, Radu. Deep Unfolding Network for Image Super-Resolution. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
+        "The automation targets towards fully deploying of Server using Azure Pipeline and deploy the CyberArk PTA application at the build time. The automation also configures PTA application. The automation supports dynamic upgradation of application and redeploying of the whole CyberArk PTA infrastructure on the fly.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 6",
+      "Dynamic installation of the CyberArk PTA application along with infrastrure deployment.",
     absbox: "absPopup6",
   },
 

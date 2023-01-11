@@ -81,7 +81,7 @@ const research = [
     authors: "Tools: Ansible, CyberArk, Satellite, Azure DevOps",
     conferences:
       "Tags: Application Deployment, IaaC",
-    researchYr: 2020,
+    researchYr: 2022,
     citebox: "popup5",
     image: "assets/images/Automations/CyberArk_Ansible_Azure_Satellite.png",
     citation: {

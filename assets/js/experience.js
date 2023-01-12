@@ -279,7 +279,7 @@ const Languagearsenalcards = [
       {
         title: "ReactJS" ,   
         description: "I have couple of projects that utilizes ReactJS Library.",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       
       {

@@ -236,43 +236,61 @@ const Languagearsenal = document.querySelector(".Languagearsenal");
 const Languagearsenalcards = [ 
       {
         title: "Python" ,   
-        description: "Python",  
+        description: "I worked with many python scripts. Developed the python scripts to create the Ansible custom collections and automated multiple scripts.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       },
       
       {
         title: "YAML" ,   
-        description: "YAML",  
+        description: "Ansible, Travis, Azure DevOps, Jenkins, Docker, Kubernates, Chef, and many more uses YAML to deploy their configurations. I have been writing in YAML on all of these platforms for last 4 years.",
         cardImage: "https://upload.wikimedia.org/wikipedia/commons/6/63/YAML_logo_in_SVG_format.svg",
       },
       
       {
         title: "Bash" ,   
-        description: "Bash",  
+        description: "My bash automations includes reporting, housekeeping, applications start/stop and daily operational tasks which are usually coupled with cronjos and Ansible schedules.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
       },
       
       {
-        title: "Markdown" ,   
-        description: "Markdown",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
-      },
-      
-      {
         title: "HTML5" ,   
-        description: "HTML5",  
+        description: "I prefer HTML5 to configure custom reports from Ansible. I use Jinja2 templating combined with HTML5 and CSS3 to create a customized reports. Also this website is developed in HTML5, Javascript and CSS3",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       },
       
       {
         title: "CSS3" ,   
-        description: "CSS3",  
+        description: "A HTML5 is incomplete without CSS3. Hence CSS3 comes bundled with HTML5.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
       
       {
+        title: "Javascript" ,   
+        description: "I have developed this website using Javascript and jQuery Library.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },      
+
+      {
+        title: "jQuery" ,   
+        description: "I have developed this website using Javascript and jQuery Library.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+      },      
+      
+      {
+        title: "ReactJS" ,   
+        description: "I have couple of projects that utilizes ReactJS Library.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      
+      {
+        title: "Markdown" ,   
+        description: "README.md are the reasons why I learnt markdown. I always have a README.md for my projects.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      },
+      
+      {
         title: "Perl" ,   
-        description: "Perl",  
+        description: "I have developed multiple Oracle LDAP tasks scripts in perl for easier daily Unix Operations. The scripts includes User management, Host managements, Sudo access management, etc",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
       },
 

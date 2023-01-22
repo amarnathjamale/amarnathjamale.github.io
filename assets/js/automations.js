@@ -26,7 +26,7 @@ const research = [
     authors:
       "Tools: Ansible, CIS2 Fremework",
     conferences:
-      "Tags: OS Hardening, IaaC, Automated Reporting",
+      "Tags: OS Hardening, IaaC, Automated Reporting, Standardization",
     researchYr: 2022,
     citebox: "popup2",
     image: "assets/images/Automations/CIS_Ansible_RedHat.png",
@@ -112,38 +112,128 @@ const research = [
 
   {
     title:
-      "Unsupervised Learning for Intrinsic Image Decomposition From a Single Image",
-    authors: "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng",
+      "Weekly Patching and Compliance Report",
+    authors: "Tools: Ansible, Satellite, HTML5",
     conferences:
-      "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-    researchYr: 2020,
+      "Tags: Automated Reporting, Compliance Management",
+    researchYr: 2021,
     citebox: "popup7",
-    image: "assets/images/research-page/imageDecomposition.png",
+    image: "assets/images/Automations/Linux_Patching_report.png",
     citation: {
       vancouver:
-        "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng. Unsupervised Learning for Intrinsic Image Decomposition From a Single Image. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
+        "This weekly automation shows the missing packages count from each server giving operation team visiblity on servers which missed the patching activity. It also provides the details of the servers which are not reporting to Satellite. The automation provides the information about the erratas that are missing from the server. The reports gets published as a webpage for team to securely view it.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 7",
+      "The automation provides insights on the overall compliance status of the platform",
     absbox: "absPopup7",
   },
   {
     title:
-      "Forward and Backward Information Retention for Accurate Binary Neural Networks",
+      "Monthly Capacity Report for Solaris Environment",
     authors:
-      "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan",
+      "Tools: Ansible, Solaris, HTML5",
     conferences:
-      "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-    researchYr: 2020,
+      "Tags: Automated Reporting, Capacity Management",
+    researchYr: 2021,
     citebox: "popup8",
-    image: "assets/images/research-page/neuralNetworks.jpg",
+    image: "assets/images/Automations/Solaris_capacity_report.png",
     citation: {
       vancouver:
-        "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
+        "The capacity management in Solaris environment is a mess. This automation makes it easy to provide the insights at the capacity distribution from the Physical Domain to its assigned Global Zones and the underlying Local Zones. The automation generates and publishes a webpage for monthly utilization overview.",
     },
     abstract:
-      "This is currently left empty and this can be considered as a dummy data 8",
+      "This ",
     absbox: "absPopup8",
+  },
+  {
+    title:
+      "Daily Solaris Hardware Status report",
+    authors:
+      "Tools: Ansible, Solaris, HTML5",
+    conferences:
+      "Tags: Automated Reporting, Monitoring",
+    researchYr: 2021,
+    citebox: "popup9",
+    image: "assets/images/Automations/Solaris_capacity_report.png",
+    citation: {
+      vancouver:
+        "The automation fetches the status of each of the components of the physical server using ipmitool. Generates the report of the all the components with their status and highlight and seperates the failed components sends mail for corrective actions. The daily report is also published as a webpage for respective teams to view. Future update includes Ansible rulebook for realtime failure status.",
+    },
+    abstract:
+      "The automation provides a daily status report of SunOS hardwares and provides teams with an insights to take corrective actions.",
+    absbox: "absPopup9",
+  },
+  {
+    title:
+      "Server Handover Report for Linux Environment",
+    authors:
+      "Tools: Ansible, CIS, ServiceNow, Azure, HTML5",
+    conferences:
+      "Tags: Automated Reporting, IaaC, Compliance Management, Standardization",
+    researchYr: 2021,
+    citebox: "popup10",
+    image: "assets/images/Automations/Handover_report.png",
+    citation: {
+      vancouver:
+        "The automation is provides a way into finding the delta between customers standard exepectation for the environment and the actual deployment. The autmation generates and deploys the a webpage of the server status once application deployment is ready to cutover to production environment. The automation helps in identifying the flows and missing activities so that the deployments are always standard and consistant through out platform. The automation validates tags in azure, all fields in the ServiceNow, CIS OS Hardening status, Client's security and performance expection regarding platform.",
+    },
+    abstract:
+      "This automation generates the report of the server and validates the infrastrures intigrity before cut over to production.",
+    absbox: "absPopup10",
+  },
+  {
+    title:
+      "Automated access provisioning for Linux Environment",
+    authors:
+      "Tools: Ansible, RedHat IDM, Azure",
+    conferences:
+      "Tags: Access Provisioning, IaaC, Standardization",
+    researchYr: 2021,
+    citebox: "popup11",
+    image: "assets/images/Automations/IDM_Ansible_Azure.png",
+    citation: {
+      vancouver:
+        "The automation uses Azure tags or Satellite tags depending on the deployment platform and creates User groups, Host groups, Host Based Access Policies and Sudo policies Rules as a standard set for the application team. The automation configures these Rules for each server deployed. Depending on the criteria of the deployment, the automation will either create a new set of the Rules or add the host to already existing ones. The automation gets rid of access provisioning. It also provides a standard way to assist with access provisioning.",
+    },
+    abstract:
+      "The automation configures an access structure at the deployment of the server.",
+    absbox: "absPopup12",
+  },
+  {
+    title:
+      "Precheck and Postchecks for any activity on Linux Environment",
+    authors:
+      "Tools: Ansible",
+    conferences:
+      "Tags: Operations",
+    researchYr: 2021,
+    citebox: "popup10",
+    image: "assets/images/experience-page/Red-Hat-AAP.ico",
+    citation: {
+      vancouver:
+        "The automation generate a status report of the configurations of a Linux machine stores them into a central location. The configuraiton includes network configurations like route details, VLAN details, IP, Mac IDs, etc, multiple OS configurations from /etc and Cluster configuration, status, hardware details and many more. The automation also provides a way to validate these configuration post activity. This ensures the integrity of the server and provides an easy time saving way for the operation team to perform the scheduled activity.",
+    },
+    abstract:
+      "The automation is used to create a configuration backup of the system prior to the activity and validates it post activity.",
+    absbox: "absPopup10",
+  },
+  {
+    title:
+      "Disaster recovery Activities Automations",
+    authors:
+      "Tools: Ansible",
+    conferences:
+      "Tags: Operations, Disaster Recovery",
+    researchYr: 2021,
+    citebox: "popup10",
+    image: "assets/images/experience-page/Red-Hat-AAP.ico",
+    citation: {
+      vancouver:
+        "The automation targets towards the system configurations that are required to change before migrations to disaster recovery. These changes help save time in the disaster recovery drills as well as the actual scenarios.",
+    },
+    abstract:
+      "This automation assists with the disaster recovery activity to same time and help get the production up and running in less time.",
+    absbox: "absPopup10",
   },
 ];
 AOS.init();

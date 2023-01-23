@@ -208,7 +208,7 @@ const research = [
       "Tags: Operations",
     researchYr: 2021,
     citebox: "popup10",
-    image: "assets/images/experience-page/Red-Hat-AAP.ico",
+    image: "assets/images/Automations/Prechecks_Automation.png",
     citation: {
       vancouver:
         "The automation generate a status report of the configurations of a Linux machine stores them into a central location. The configuraiton includes network configurations like route details, VLAN details, IP, Mac IDs, etc, multiple OS configurations from /etc and Cluster configuration, status, hardware details and many more. The automation also provides a way to validate these configuration post activity. This ensures the integrity of the server and provides an easy time saving way for the operation team to perform the scheduled activity.",
@@ -219,13 +219,31 @@ const research = [
   },
   {
     title:
+      "Decommission Automation for Linux Environment",
+    authors:
+      "Tools: Ansible, Satellite, RedHat IDM, Azure",
+    conferences:
+      "Tags: IaaC, Standardization",
+    researchYr: 2021,
+    citebox: "popup10",
+    image: "assets/images/Automations/Decommission_Automation.png",
+    citation: {
+      vancouver:
+        "The automation is targeted towards the decommissioning of the server from Infrastructure tools like Satellite, RedHat IDM, Azure. The automation is triggered upon ServiceNow request reaches the Operation Team's queue and awaits for the approval from the Operation Engineer. The automation also generates a capacity released details as webpage and publishes it also sends it over mail for referances.",
+    },
+    abstract:
+      "This automation decommissions the server from the infrastrure tools upon ServiceNow requests reaches to operational queue.",
+    absbox: "absPopup10",
+  },
+  {
+    title:
       "Disaster recovery Activities Automations",
     authors:
       "Tools: Ansible",
     conferences:
       "Tags: Operations, Disaster Recovery",
     researchYr: 2021,
-    citebox: "popup10",
+    citebox: "popup11",
     image: "assets/images/experience-page/Red-Hat-AAP.ico",
     citation: {
       vancouver:
@@ -233,7 +251,7 @@ const research = [
     },
     abstract:
       "This automation assists with the disaster recovery activity to same time and help get the production up and running in less time.",
-    absbox: "absPopup10",
+    absbox: "absPopup11",
   },
 ];
 AOS.init();

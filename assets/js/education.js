@@ -5,66 +5,99 @@ AOS.init();
 const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
-    title: "Data Science",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/browse/data-science",
-  },
-  {
-    title: "Cryptography",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
-  },
-  {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/machine-learning",
-  },
-  {
-    title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
-  },
-  {
-    title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
-  },
-  {
-    title: "Javascript",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
-  },
-  {
-    title: "Bootstrap 4",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
-  },
-  {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/edx.svg",
-    moocLink: "https://www.edx.org/learn/reactjs",
-  },
-  {
-    title: "Intro to React Native",
-    cardImage: "assets/images/education-page/coursera2.svg",
+    title: "Google India Challenge Scholarship: Front-End Web Dev",
+    cardImage: "assets/images/education-page/Udacity_logo.svg",
     moocLink:
-      "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
+      "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011",
   },
   {
-    title: "NodeJS, Express and MongoDB",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/server-side-nodejs",
+    title: "Linux System Engineer: Bash Shell Scripting for Automation",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/linux-system-engineer-bash-shell-scripting-for-automation",
   },
   {
-    title: "XML-AJAX",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/xml-from-beginner-to-expert/",
+    title: "Azure Administration Essential Training",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/azure-administration-essential-training-2019",
   },
   {
-    title: "Data Structures & Algorithms",
-    cardImage: "assets/images/education-page/udacity.svg",
+    title: "Developing CI/CD Solutions with Azure DevOps",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/developing-ci-cd-solutions-with-azure-devops",
+  },
+  {
+    title: "Azure Active Directory: Basics",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/azure-active-directory-basics",
+  },
+  {
+    title: "Ansible Essential Training",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/ansible-essential-training-2018",
+  },
+  {
+    title: "Azure Administration: Monitor and Back Up Azure Resources",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/azure-administration-monitor-and-back-up-azure-resources",
+  },
+  {
+    title: "Programming Foundations: Fundamentals",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/programming-foundations-fundamentals-3",
+  },
+  {
+    title: "Getting Started with Python",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/paths/getting-started-with-python",
+  },
+  {
+    title: "Learning Python",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
     moocLink:
-      "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
+      "https://www.linkedin.com/learning/learning-python-14393370",
+  },
+  {
+    title: "Building a Web Application on Microsoft Azure",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/building-a-web-application-on-microsoft-azure",
+  },
+  {
+    title: "Getting Started as an Azure Developer",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/paths/getting-started-as-an-azure-developer",
+  },
+  {
+    title: "Getting Started with Microsoft Azure Administration",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink:
+      "https://www.linkedin.com/learning/paths/getting-started-with-microsoft-azure-administration",
+  },
+  {
+    title: "Microsoft Azure: Security Concepts",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/microsoft-azure-security-concepts-8637760",
+  },
+  {
+    title: "Azure for DevOps: Continuous Integration",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink:
+      "https://www.linkedin.com/learning/azure-for-devops-continuous-integration",
+  },  {
+    title: "Azure Administration: Implement and Manage Storage",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink: "https://www.linkedin.com/learning/azure-administration-implement-and-manage-storage",
+  },
+  {
+    title: "Cloud Architecture: Design Decisions",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink:
+      "https://www.linkedin.com/learning/cloud-architecture-design-decisions-2018",
+  },  
+  {
+    title: "Learning Amazon Web Services (AWS) for Developers",
+    cardImage: "assets/images/education-page/linkedin-learning.svg",
+    moocLink:
+      "https://www.linkedin.com/learning/learning-amazon-web-services-aws-for-developers-2020",
   },
 ];
 

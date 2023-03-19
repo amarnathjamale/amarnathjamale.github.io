@@ -9,14 +9,14 @@ const exp = [
     cardImage: "assets/images/experience-page/TCS_Azure_DevOps.png",
     place: "Tata Consultancy Services Ltd.",
     time: "(May, 2020 - Present)",
-    desp: "<li>Developed multiple Azure Pipelines to have a CICD deployment for several applications.</li> <li>Utlized Biceps for pipeline deployments.</li> <li>Migrated multiple OnPrem workloads to Azure and standardized them via pipeline.</li> <li>Azure Administrator support for Cloud Workload.</li>",
+    desp: "<li>Designed and implemented multiple Azure pipelines for continuous integration and continuous deployment of various applications.</li> <li>Leveraged Biceps to streamline pipeline deployments.</li> <li>Successfully migrated on-premises workloads to Azure and standardized them through the use of pipelines.</li> <li>Provided expert-level Azure administrator support for cloud-based workloads.</li>",
   },
   {
     title: "Ansible Developer",
     cardImage: "assets/images/experience-page/TCS_Ansible_Developer.png",
     place: "Tata Consultancy Services Ltd.",
     time: "(Dec, 2019 - Present)",
-    desp: "<li>Developed multiple playbooks to automate the Infrastrure workloads.</li><li>Automated serveral application deployments and configuration.</li><li>IaC for OS Deployments with OS customizations, CIS hardening and default applications deployments and configurations.</li> <li>Reports generations: for OS Compliances and security, Patching, application deployments and many more.</li>",
+    desp: "<li>Created multiple playbooks to automate infrastructure workloads.</li> <li>Automated multiple application deployments and configurations utilizing scripting and configuration management tools.</li> <li>Implemented Infrastructure as Code (IaC) for OS deployments with customizations, CIS hardening, and deployment of default applications and configurations.</li> <li>Generated detailed reports for compliance and security, patching, application deployments, and other operational tasks.</li> ",
   },
   {
     title: "Unix/Linux Platform Engineer",
@@ -64,43 +64,43 @@ const OperatingSystemscards = [
 
       {
         title: "Linux" ,   
-        description: "My Love for Linux OS keeps on growing as I use it everyday for various purposes like WSL, Containers, Developments and many more. Arch Linux is one of my favourite distro.",  
+        description: "I have a strong passion for the Linux operating system and use it daily for various tasks such as Windows Subsystem for Linux, containers, and development. I use Arch BTW.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
       },
       
       {
         title: "Red Hat" ,   
-        description: "I have been working on RHEL systems from RHEL6 to 9 since my first day of my Job. Pacemaker, Veritas, XFS filesystmes are some of my daily utilized features of RHEL.",  
+        description: "As a UNIX platform engineer, I have been working with Red Hat Enterprise Linux systems from version 6 to 9. I regularly use features such as Pacemaker, Veritas, and XFS file systems.",  
         cardImage: "assets/images/Arsenal/Red-Hat.svg",
       },
       
       {
         title: "Windows" ,   
-        description: "No caption needed here.",  
+        description: "I am also familiar with Windows Server, including server roles and features, active directory, and group policy management. I have experience working with PowerShell for automation and scripting tasks.",  
         cardImage: "assets/images/Arsenal/windows.ico",
       },
       
       {
         title: "Oracle Solaris" ,   
-        description: "I have been supporting Solaris 10 and 11 as part of Unix Platform Engineer career. SunOS cluster, ZFS Filesystems, Branded and non branded Zones and other Solaris aspects I had worked on.",  
+        description: "I have also supported Solaris 10 and 11 in my career. I have experience with SunOS clusters, ZFS file systems, branded and non-branded zones, and other aspects of Solaris.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
       },
       
       {
         title: "Fedora" ,   
-        description: "This is my daily driver OS. Being upstream of RHEL and official support of RedHat, stable and improved development of the Fedora is reason I always recommend it to my friends.",  
+        description: "I currently use Fedora as my daily driver operating system. Its stable and improved development, as well as official support from Red Hat, is why I often recommend it to others.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg",
       },
       
       {
         title: "Ubuntu" ,   
-        description: "This is my old daily driver. I still use it daily as a part of WSL development setup.",  
+        description: "I previously used Ubuntu as my daily driver, and still use it regularly as part of my Windows Subsystem for Linux development setup.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
       },
       
       {
         title: "Android" ,   
-        description: "I have rooted my Andorid device for modding and customizing with custom OS based AOSP, CAF and LOS. NetHunter, Magisk and Lucky Patcher are my favourite addons for my Android.",  
+        description: "As an avid Android user, I have rooted my device to customize it with custom operating systems based on AOSP, CAF, and LOS. Some of my favorite add-ons include NetHunter, Magisk, and Lucky Patcher.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
       },
 
@@ -133,19 +133,19 @@ const cloudarsenal = document.querySelector(".cloudarsenal");
 const cloudarsenalcards = [
       {
         title: "Azure" ,   
-        description: "As a part of Azure DevOps Engineer, I have been managing Azure portal to support almost all of its components. Certifications: AZ-900, AZ-104, AZ-204, AZ-400",  
+        description: "As an Azure DevOps Engineer, I am experienced in managing the Azure portal and its various components. I am certified in AZ-900, AZ-104, AZ-204, and AZ-400.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
       },
       
       {
         title: "Amazon Web Services" ,   
-        description: "Amazon Web Services has some of personal and coorporate projects that I have worked on.",  
+        description: "I have experience working with Amazon Web Services on both personal and professional projects.",  
         cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/aws.svg",
       },
 
       {
         title: "Google Cloud" ,   
-        description: "I have got my hands on Google Cloud while working on some of the hackathons.",  
+        description: "I have also had the opportunity to work with Google Cloud through participation in hackathons.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
       },
 ];
@@ -175,13 +175,13 @@ const RedHatarsenal = document.querySelector(".RedHatarsenal");
 const RedHatarsenalcards = [
       {
         title: "Red Hat Ansible Automation Platform" ,   
-        description: "I have been managing the RedHat Ansible Automation Platform of 1000+ servers with 80+ projects containing 300+ Automation Roles and templates.",  
+        description: "I have been managing the Red Hat Ansible Automation Platform for over 1000 servers, with 80+ projects containing 300+ automation roles and templates.",  
         cardImage: "assets/images/Arsenal/Red-Hat-AAP.ico",
       },
 
       {
         title: "Red Hat OpenShift" ,   
-        description: "I have recently started managing and developing the Red Hat OpenShift Platform. I have couple of sandbox projects on Openshift where I have deployed and managed from the entire applications",  
+        description: "I have recently started managing and developing the Red Hat OpenShift Platform. I have several sandbox projects on OpenShift where I have deployed and managed entire applications.",  
         cardImage: "https://cdn.jsdelivr.net/gh/amarnathjamale/starter-workflows/icons/openshift.svg",
       },
 
@@ -193,7 +193,7 @@ const RedHatarsenalcards = [
       
       {
         title: "Red Hat Satellite" ,   
-        description: "I have managed Red Hat Satellite platform with 1000+ servers for repository and package managements. I have also managed the IaC codes for Satellite deployments via Kickstarter templates.",  
+        description: "I have managed the Red Hat Satellite platform for over 1000 servers for repository and package management. I have also managed IaC codes for Satellite deployments using Kickstart templates.",  
         cardImage: "assets/images/Arsenal/Red-Hat-Satellite.png",
       },
       
@@ -205,7 +205,7 @@ const RedHatarsenalcards = [
       
       {
         title: "Red Hat Insights" ,   
-        description: "I have been utilizing the RedHat console and Insights for managing the overview of Infrastrure for Vulnerability management.",  
+        description: "I have been utilizing the Red Hat console and Insights for managing the overview of Infrastrure for Vulnerability management.",  
         cardImage: "assets/images/Arsenal/Red-Hat-Insights.png",
       },
 
@@ -236,43 +236,61 @@ const Languagearsenal = document.querySelector(".Languagearsenal");
 const Languagearsenalcards = [ 
       {
         title: "Python" ,   
-        description: "Python",  
+        description: "I worked with many python scripts. Developed the python scripts to create the Ansible custom collections and automated multiple scripts.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       },
       
       {
         title: "YAML" ,   
-        description: "YAML",  
+        description: "I have been writing in YAML for various platforms such as Ansible, Azure DevOps, Travis, Jenkins, Docker, Kubernetes, Chef, and more for the past 4 years.",
         cardImage: "https://upload.wikimedia.org/wikipedia/commons/6/63/YAML_logo_in_SVG_format.svg",
       },
       
       {
         title: "Bash" ,   
-        description: "Bash",  
+        description: "My bash automations includes reporting, housekeeping, applications start/stop and daily operational tasks which are usually coupled with cronjos and Ansible schedules.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
       },
       
       {
-        title: "Markdown" ,   
-        description: "Markdown",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
-      },
-      
-      {
         title: "HTML5" ,   
-        description: "HTML5",  
+        description: "I prefer HTML5 to configure custom reports from Ansible. I use Jinja2 templating combined with HTML5 and CSS3 to create a customized reports. Also this website is developed in HTML5, Javascript and CSS3",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       },
       
       {
         title: "CSS3" ,   
-        description: "CSS3",  
+        description: "A HTML5 is incomplete without CSS3. Hence CSS3 comes bundled with HTML5.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
       
       {
+        title: "Javascript" ,   
+        description: "I have developed this website using Javascript and jQuery Library.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },      
+
+      {
+        title: "jQuery" ,   
+        description: "I have developed this website using Javascript and jQuery Library.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+      },      
+      
+      {
+        title: "ReactJS" ,   
+        description: "I have couple of projects that utilizes ReactJS Library.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      
+      {
+        title: "Markdown" ,   
+        description: "README.md are the reasons why I learnt markdown. I always have a README.md for my projects.",  
+        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      },
+      
+      {
         title: "Perl" ,   
-        description: "Perl",  
+        description: "I have developed multiple Oracle LDAP tasks scripts in perl for easier daily Unix Operations. The scripts includes User management, Host managements, Sudo access management, etc",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
       },
 
@@ -303,52 +321,46 @@ const DevOpsarsenal = document.querySelector(".DevOpsarsenal");
 const DevOpsarsenalcards = [
       {
         title: "Ansible" ,   
-        description: "Ansible",  
+        description: "Managed 1000+ servers with 80+ projects containing 300+ automation roles and templates and. I am also working on PoC for Event Driven Ansible.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
       },
       
       {
         title: "Azure DevOps" ,   
-        description: "Azure DevOps",  
+        description: "As an Azure DevOps Engineer, I have been managing the Azure portal to support almost all of its components. I am certified in AZ-900, AZ-104, AZ-204, and AZ-400.",  
         cardImage: "https://cdn.jsdelivr.net/gh/benc-uk/icon-collection/azure-icons/Azure-DevOps.svg",
       },
       
       {
         title: "Kubernetes" ,   
-        description: "Kubernetes",  
+        description: "I have experience working with Kubernetes tools such as kubectl, kubeadm and Helm. I have experience troubleshooting and debugging Kubernetes clusters.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
       },
       
       {
         title: "Docker" ,   
-        description: "Docker",  
+        description: "Worked with Docker, both as a container runtime and as a platform for building and deploying containerized applications. 2023 goal is to upload more projects to docker hub.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       },
       
       {
         title: "Podman" ,   
-        description: "Podman",  
+        description: "As a Red Hat user, I am biased towards Podman for my container needs. I have experience creating custom Podman images and managing Podman containers.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/podman/podman-original.svg",
       },
       
       {
         title: "Jenkins" ,   
-        description: "Jenkins",  
+        description: "I have experience creating and configuring Jenkins jobs and pipelines. I have experience integrating Jenkins with other tools such as Ansible and Kubernetes.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
       },
       
       {
         title: "Terraform" ,   
-        description: "Terraform",  
+        description: "I have experience creating and managing Terraform modules and state files. I have experience integrating Terraform with other tools such as Ansible and Kubernetes.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
       },
       
-      {
-        title: "k3s" ,   
-        description: "k3s",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/k3s/k3s-original.svg",
-      },
-
 ];
 
 const showDevOpsCards = () => {
@@ -375,118 +387,70 @@ const Operationalarsenal = document.querySelector(".Operationalarsenal");
 const Operationalarsenalcards = [
       {
         title: "Jira" ,   
-        description: "Jira",  
+        description: "I use Jira for project management and tracking tasks, bugs, and issues. I have been utilizing Jira for 4 years now.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
       },
-      
       {
         title: "Confluence" ,   
-        description: "Confluence",  
+        description: "Confluence is my go-to for documentation and collaboration. I use it to create and share documents, diagrams, and knowledge bases with my team.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg",
       },
       
       {
         title: "BitBucket" ,   
-        description: "BitBucket",  
+        description: "I use BitBucket for version control and code management for couple of coorporate projects.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
+      },
+
+      {
+        title: "ServiceNow" ,   
+        description: "I have experience using ServiceNow for IT service management and IT operations. I have created couple of Kanban Dashboards for better management and visibility of the team's progress.",  
+        cardImage: "assets/images/Arsenal/ServiceNow.svg",
       },
       {
         title: "Azure Repos" ,   
-        description: "Azure Repos",  
+        description: "I have used Azure Repos for developing and managing Azure Pipelines.",  
         cardImage: "assets/images/Arsenal/repos.ico",
       },
       
       {
         title: "Azure Pipelines" ,   
-        description: "Azure Pipelines",  
+        description: "I have developed many Azure Pipelines for automating deployments of infrastructure and application.",  
         cardImage: "assets/images/Arsenal/pipelines.ico",
-      },
-      
-      {
-        title: "Azure Functions" ,   
-        description: "Azure Functions",  
-        cardImage: "assets/images/Arsenal/function.ico",
-      },
-      
-      {
-        title: "Azure Boards" ,   
-        description: "Azure Boards",  
-        cardImage: "assets/images/Arsenal/boards.ico",
-      },
-      
-      {
-        title: "Azure TestPlans" ,   
-        description: "Azure TestPlans",  
-        cardImage: "assets/images/Arsenal/testplans.ico",
-      },
-      
-      {
-        title: "Azure Artifacts" ,   
-        description: "Azure Artifacts",  
-        cardImage: "assets/images/Arsenal/artifacts.ico",
       },
       {
         title: "Git" ,   
-        description: "Git",  
+        description: "Who doesn't know git. I have experience with Git flow and creating custom scripts for automating Git tasks.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
       
       {
-        title: "GitLab" ,   
-        description: "GitLab",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
-      },
-      
-      {
         title: "GitHub" ,   
-        description: "GitHub",  
+        description: "GitHub is where I code most of my personal projects. I have experience with GitHub flow and creating custom pipelines for continuous integration and delivery. This website is also hosted on GitHub.",
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       },
-      {
-        title: "Visual Studio" ,   
-        description: "Visual Studio",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
-      },
-      
+
       {
         title: "Visual Studio Code" ,   
-        description: "Visual Studio Code",  
+        description: "Visual Studio Code is my preferred code editor. I have a customized development setup with Ansible, Azure, HTML, BASH and many more extensions.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
       },
       
       {
         title: "Vim" ,   
-        description: "Vim",  
+        description: "I know how to exit out of Vim. I also have a NeoVim setup with customized extension for Ansible Developments.",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
       },
-            
-      {
-        title: "Terminal" ,   
-        description: "Terminal",  
-        cardImage: "assets/images/Arsenal/terminal.ico",
-      },
-      
+
       {
         title: "Jupyter" ,   
-        description: "Jupyter",  
+        description: "I used Jupyter to develop python programmes and used it develop some of ML models using Pandas, Numpy and Tensorflow",  
         cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
       },
       
       {
-        title: "Tensorflow" ,   
-        description: "Tensorflow",  
-        cardImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-      },
-      
-      {
-        title: "Microsoft Power Apps" ,   
-        description: "Microsoft Power Apps",  
-        cardImage: "assets/images/Arsenal/powerapps.ico",
-      },
-      
-      {
         title: "Microsoft Power Automate" ,   
-        description: "Microsoft Power Automate",  
+        description: "I use Power Automate to automate tasks and workflows like scheduling focusing modes on the fly, managing to-do list to increase my productivity.", 
         cardImage: "assets/images/Arsenal/automate.ico",
       },
 
@@ -510,136 +474,3 @@ const showOperationalCards = () => {
   Operationalarsenal.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showOperationalCards);
-
-// Hackathon Section
-
-const hackathonsection = document.querySelector(".hackathon-section");
-const mentor = [
-  {
-    title: "The Uplift Project",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/uplift.png",
-    desp: "I would be responsible for guiding 100s of participants across the globe in their first steps towards Applied Data Science and building end-to-end machine learning projects.",
-    href: "https://uplift.girlscript.tech/",
-  },
-  {
-    title: "ULHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/ulhacks.png",
-    desp: "ULHacks is a 36 hour long hackathon organized with an aim to enable students to create a project which empowers learning.",
-    href: "https://ulhacks.com/",
-  },
-  {
-    title: "WaffleHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/wafflehacks.png",
-    desp: "WaffleHacks 2021 is an upcoming 48-hour student-organized hackathon with an aim to bring technical solutions to local communities and small businesses.",
-    href: "https://wafflehacks.org/",
-  },
-  {
-    title: "Elevate Tech",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/elevate.png",
-    desp: "Elevate Hacks is an upcoming all-female virtual hackathon coming from AUGUST 14th to 15th.",
-    href: "https://elevatetech.codes/",
-  },
-  {
-    title: "PitchTeen",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/pitchteen.png",
-    desp: "PitchTeen 2.0 was a tech startup competition for female and non-binary communities in high school and college from all over the world with an aim to create a safe and encouraging place for women to help them explore tech and business fields.",
-    href: "https://www.linkedin.com/company/pitchteen/about/",
-  },
-  {
-    title: "Hack-A-Solution",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/hackasolution.png",
-    desp: "Hack-a-Solution 2021 is a 24 hour long hackathon organized by Frisco students to raise awareness of world issues through technology.",
-    href: "https://hackasolution.devpost.com/",
-  },
-  {
-    title: "UniGlobe Hacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/uniglobe.png",
-    desp: "UniGlobe Hacks 2.0 is an upcoming 4-day long hackathon run by high school students held during 28-31 July 2021.",
-    href: "https://uniglobe-hacks.devpost.com/",
-  },
-  {
-    title: "AtlasHacks",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/atlas.png",
-    desp: "AtlasHacks II is a 3-day virtual hackathon that aims to foster creativity within hackers all around the world.",
-    href: "https://atlashacks2.devpost.com/",
-  },
-  {
-    title: "NeoHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/neo.png",
-    desp: "NeoHacks is an upcoming 48-hour hackathon taking place July 23-25, 2021 where hundreds of students from around the world will come together virtually to learn new skills, meet new friends, and build awesome projects. We provide beginner-friendly workshops, mentorship, fun games, and more.",
-    href: "https://neohacks.org/",
-  },
-  {
-    title: "Mission Inspired",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/mission.png",
-    desp: "InspireEd Hacks is a nationwide initiative organized by the student-for-student nonprofit, Mission InspirEd, challenging students ages 10-18 to synthesize their creativity and coding experience into a product beneficial to the educational community.",
-    href: "https://www.missioninspired.org/hackathon",
-  },
-  {
-    title: "Hack3",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/hack3.png",
-    desp: "Hack3 2021 is an upcoming global online hackathon that aims to enable high school students to learn computer science, with a broader message of (everyone can code) targeting underrepresented demographics to improve diversity and inclusion of individuals in the computer technology space.",
-    href: "https://hack3.co/",
-  },
-  {
-    title: "JITHack",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/jithack.png",
-    desp: "JITHack is an upcoming virtual design and development hackathon organized by the students of Jyothy Institute of Technology, Bengaluru on June 26, 2021, where participants have 24 hours to build something incredible.",
-    href: "https://jithack.netlify.app/",
-  },
-  {
-    title: "Recess Hacks",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/recess.png",
-    desp: "Recess Hacks is an upcoming hackathon for high school students in the Greater Toronto Area that strives to encourage innovation among high school students and get involved in technology.",
-    href: "https://recesshacks.com/",
-  },
-  {
-    title: "Citro Tech",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/citro.png",
-    desp: "Citro Hacks 2021 is an upcoming all-inclusive online hackathon organized by Citro Tech, a student led organization dedicated to empowering minorities in the tech field</li>",
-    href: "https://citro.tech/",
-  },
-  {
-    title: "NHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/nhacks.png",
-    desp: "NHacks VI was a hackathon that aimed to encourage students everywhere to develop skills in computer science by creating tangible products that they're proud of. It initially started as Michigan's largest high school hackathon.",
-    href: "https://nhacks-vi.devpost.com/",
-  },
-];
-
-const showCards3 = () => {
-  let output = "";
-  mentor.forEach(
-    ({ title, image, subtitle, desp, href }) =>
-      (output += `  
-      <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <img src="${image}" alt="">
-        </div>
-        <div class="blog-slider__content">
-          <div class="blog-slider__title">${title}</div>
-          <span class="blog-slider__code">${subtitle}</span>
-          <div class="blog-slider__text">${desp}</div>
-          <a href="${href}" class="blog-slider__button">Read More</a>   
-        </div>
-      </div>
-      `)
-  );
-  hackathonsection.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards3);

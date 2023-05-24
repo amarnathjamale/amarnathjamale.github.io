@@ -70,7 +70,7 @@
         <div class="text col-sm-6" style="margin-top: 140px;">Hi <span class="wave"><img src="assets/images/Hand.gif" width="35px"></span>&nbsp;, I'm <span class="header">Amarnath Jamale</span>
             <div class="center">
                 <div>
-                    <img src="assets/images/dp_male.svg" alt="" class="rounded-circle" height="200" width="200">
+                    <img id="randomImage" alt="" class="rounded-circle" height="200" width="200">
                 </div>
                 <br/>
                 <span style="display: inline;">I am into <span class="animated-text"
@@ -212,6 +212,16 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
     <script src="assets/js/particle.js"></script>
 
+    <script>
+        // Array of image file names
+        var images = ['profile1.jpg', 'profile2.jpg', 'profile3.jpg', 'profile4.jpg', 'profile5.jpg', 'profile6.jpg'];
+      
+        // Get a random image from the array
+        var randomImage = images[Math.floor(Math.random() * images.length)];
+      
+        // Set the src attribute of the img tag to the selected image
+        document.getElementById('randomImage').src = 'assets/images/profiles/' + randomImage;
+      </script>
 </body>
 
 </html>

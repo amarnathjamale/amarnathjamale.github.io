@@ -253,6 +253,75 @@ const research = [
       "This automation assists with the disaster recovery activity to same time and help get the production up and running in less time.",
     absbox: "absPopup11",
   },
+  {
+    title: "Satellite Configuration as a Code",
+    authors:
+      "Tools: Ansible, Satellite",
+    conferences:
+      "Tags: CaaC, Satellite, Ansible",
+    researchYr: 2023,
+    citebox: "popup12",
+    image: "assets/images/Automations/Satellite_Ansible.jpg",
+    citation: {
+      vancouver:
+        "This automation converts the configurations of satellite into code. All aspects of the satellite like users, groups, roles, products, content credentials, repositories, subscriptions, activation keys, content views, composite content views, content view filters, host groups, locations, compute profiles, etc. This enables a standardized way to deploy configurations on the satellite and gives a way to recover and restore the satellite to its previous state.",
+    },
+    abstract:
+      "A configuration as a code via Ansible playbook for the Satellite's all aspects.",
+    absbox: "absPopup12",
+  },
+  {
+    title: "Ansible Automation Platform Configuration as a Code",
+    authors:
+      "Tools: Ansible",
+    conferences:
+      "Tags: CaaC, Ansible",
+    researchYr: 2023,
+    citebox: "popup13",
+    image: "assets/images/experience-page/Red-Hat-AAP.ico",
+    citation: {
+      vancouver:
+        "This automation converts the configurations of Ansible Automation Platform into code. All aspects of the satellite like credential, execution environment, group, instance, instance group, inventory, inventory source, job template, notification template, organization, project, role, schedule, settings, subscriptions, team, user, workflow job template etc. This enables a standardized way to deploy configurations on the Ansible Automation Platform and gives a way to recover and restore the Ansible Automation Platform to its previous state.",
+    },
+    abstract:
+      "A configuration as a code via Ansible playbook for the Ansible Automation Platform's all aspects.",
+    absbox: "absPopup13",
+  },
+  {
+    title: "LVM Configuaration for the Linux Servers",
+    authors:
+      "Tools: Ansible, Linux",
+    conferences:
+      "Tags: Ansible, LVM",
+    researchYr: 2023,
+    citebox: "popup14",
+    image: "assets/images/experience-page/Red-Hat-AAP.ico",
+    citation: {
+      vancouver:
+        "LVM configuration for any Linux servers is vital for its optimal performace. This automation creates a standardized way to manage the LVM.",
+    },
+    abstract:
+      "Creates and Manages LVM configuration for newly deployed servers",
+    absbox: "absPopup14",
+  },
+  {
+    title: "Leapp in place upgrade of RHEL Servers",
+    authors:
+      "Tools: Ansible, Linux, Satellite, HTML",
+    conferences:
+      "Tags: Ansible, LVM",
+    researchYr: 2023,
+    citebox: "popup15",
+    image: "assets/images/Automations/Leapp-Satellite-Ansible-HTML.jpg",
+    citation: {
+      vancouver:
+        "The automation included a workflow of four stages:<br>1. Report generation and uploading to sharepoint.<br>2. Based on issues found in the report, performing multiple remediation tasks and uploading the remediation report to sharepoint.<br>3. Validation OS readiness and performing the LEAPP.<br>4. Performing the closure tasks including rehardening and making the OS compatible with client specifications.",
+    },
+    abstract:
+      "Fully Automated RedHat Major version in place upgrade using Leapp Utility.",
+    absbox: "absPopup15",
+  },
+  
 ];
 AOS.init();
 const fillData = () => {

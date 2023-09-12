@@ -296,7 +296,7 @@ const research = [
         "The automation targets towards the system configurations that are required to change before migrations to disaster recovery. These changes help save time in the disaster recovery drills as well as the actual scenarios.",
     },
     abstract:
-      "This automation assists with the disaster recovery activity to same time and help get the production up and running in less time.",
+      "This automation assists with the disaster recovery activity to save time and help get the production up and running in less time.",
   },
   {
     title: "LVM Configuaration for the Linux Servers",

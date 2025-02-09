@@ -81,7 +81,7 @@ const research = [
   {
     title: "RedHat System Hardening as per CIS Guidelines",
     authors:
-      "Tools: Ansible, CIS2 Fremework",
+      "Tools: Ansible, CIS2 Framework",
     conferences:
       "Tags: OS Hardening, IaaC, Automated Reporting, Standardization",
     researchYr: 2022,
@@ -127,7 +127,7 @@ const research = [
 
   {
     title:
-      "Autosys Autamated Installation",
+      "Autosys Automated Installation",
     authors:
       "Tools: Ansible, Autosys, Satellite",
     conferences:
@@ -139,7 +139,7 @@ const research = [
         "The automation utilizes the Satellite to fetch the latest installation setups and deploy it on the targeted hosts. It dynamically customizes the installation based on the host and environment. This also generates a dynamically customized report of installation to necessary recepients.",
     },
     abstract:
-      "An Automation for Autosys Deployment ulitizing Satellite and Ansible.",
+      "An Automation for Autosys Deployment utilizing Satellite and Ansible.",
   },
   {
     title: "CyberArk PSMP Installation",
@@ -153,7 +153,7 @@ const research = [
         "The automation targets towards fully deploying of Server using Azure Pipeline and deploy the CyberArk PSMP application at the build time. The automation also configures PSMP application. The automation supports dynamic upgradation of application and redeploying of the whole PSMP infrastructure on the fly.",
     },
     abstract:
-      "Dynamic installation of the CyberArk PSMP application along with infrastrure deployment.",
+      "Dynamic installation of the CyberArk PSMP application along with infrastructure deployment.",
   },
 
   {
@@ -168,7 +168,7 @@ const research = [
         "The automation targets towards fully deploying of Server using Azure Pipeline and deploy the CyberArk PTA application at the build time. The automation also configures PTA application. The automation supports dynamic upgradation of application and redeploying of the whole CyberArk PTA infrastructure on the fly.",
     },
     abstract:
-      "Dynamic installation of the CyberArk PTA application along with infrastrure deployment.",
+      "Dynamic installation of the CyberArk PTA application along with infrastructure deployment.",
   },
 
   {
@@ -299,7 +299,7 @@ const research = [
       "This automation assists with the disaster recovery activity to save time and help get the production up and running in less time.",
   },
   {
-    title: "LVM Configuaration for the Linux Servers",
+    title: "LVM Configuration for the Linux Servers",
     authors:
       "Tools: Ansible, Linux",
     conferences:
@@ -308,7 +308,7 @@ const research = [
     image: "assets/images/experience-page/Red-Hat-AAP.ico",
     citation: {
       vancouver:
-        "LVM configuration for any Linux servers is vital for its optimal performace. This automation creates a standardized way to manage the LVM.",
+        "LVM configuration for any Linux servers is vital for its optimal performance. This automation creates a standardized way to manage the LVM.",
     },
     abstract:
       "Creates and Manages LVM configuration for newly deployed servers",
@@ -358,7 +358,7 @@ const fillData = () => {
                         </button>
                 
                         <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
-                            DISCRIPTION
+                            DESCRIPTION
                         </button>
                     </div>
                     <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">

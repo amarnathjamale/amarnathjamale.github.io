@@ -5,24 +5,31 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: "Senior Platform Engineer",
+    cardImage: "assets/images/experience-page/CatalystOne.svg",
+    place: "CatalystOne Solutions AS",
+    time: "(August, 2025 - Present)",
+    desp: "<li>Driving the Backstage developer portal as the backbone for CatalystOne's internal developer platform, curating golden paths and service templates.</li> <li>Designing GitHub automation and reusable actions to codify governance, security guardrails, and delivery best practices across product teams.</li> <li>Operating Azure Kubernetes Service environments with infrastructure as code to provide reliable, scalable platform runtimes.</li> <li>Partnering with engineering stakeholders to observe platform health and prioritize roadmap delivery for developer productivity.</li>",
+  },
+  {
     title: "Azure DevOps Engineer",
     cardImage: "assets/images/experience-page/TCS_Azure_DevOps.png",
     place: "Tata Consultancy Services Ltd.",
-    time: "(May, 2020 - Present)",
+    time: "(May, 2020 - July, 2025)",
     desp: "<li>Designed and implemented multiple Azure pipelines for continuous integration and continuous deployment of various applications.</li> <li>Leveraged Biceps to streamline pipeline deployments.</li> <li>Successfully migrated on-premises workloads to Azure and standardized them through the use of pipelines.</li> <li>Provided expert-level Azure administrator support for cloud-based workloads.</li>",
   },
   {
     title: "Ansible Developer",
     cardImage: "assets/images/experience-page/TCS_Ansible_Developer.png",
     place: "Tata Consultancy Services Ltd.",
-    time: "(Dec, 2019 - Present)",
+    time: "(Dec, 2019 - July, 2025)",
     desp: "<li>Created multiple playbooks to automate infrastructure workloads.</li> <li>Automated multiple application deployments and configurations utilizing scripting and configuration management tools.</li> <li>Implemented Infrastructure as Code (IaC) for OS deployments with customizations, CIS hardening, and deployment of default applications and configurations.</li> <li>Generated detailed reports for compliance and security, patching, application deployments, and other operational tasks.</li> ",
   },
   {
     title: "Unix/Linux Platform Engineer",
     cardImage: "assets/images/experience-page/TCS_Unix_Platform_Engineer.png",
     place: "Tata Consultancy Services Ltd.",
-    time: "(Feb, 2019 - Present)",
+    time: "(Feb, 2019 - July, 2025)",
     desp: "<li>Bash Automations Scripts for Daily operational works.</li><li>Access management by OpenLDAP & RedHat IDM standardized using multiple scripts created and use cases documented which upon shared with L1 resources distributed the workload based on skill level.</li> <li> Worked on many filesystems’ creation/extension, PCS, VCS & Sun Cluster configurations tasks as a part of regular Unix operation tasks.</li>",
   },
 ];

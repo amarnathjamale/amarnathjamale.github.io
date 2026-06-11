@@ -54,9 +54,23 @@
         <a href="#credentials">Credentials</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="nav-status" title="Status page humor — I run platforms, the platforms run fine.">
-        <span class="status-dot" aria-hidden="true"></span>
-        <span class="status-text">all systems operational</span>
+      <div class="status-wrap">
+        <button class="nav-status" id="status-btn" aria-expanded="false" aria-controls="status-pop" title="Click for the live status page">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-text" id="status-text">all systems operational</span>
+        </button>
+        <div class="status-pop mono" id="status-pop" hidden>
+          <p class="status-pop-title">status.jamale.org</p>
+          <ul>
+            <li><span>developer portal</span><span class="st ok">● operational</span></li>
+            <li><span>control plane</span><span class="st ok">● reconciling</span></li>
+            <li><span>ci/cd pipelines</span><span class="st ok">● green</span></li>
+            <li><span>yaml indentation</span><span class="st ok">● aligned</span></li>
+            <li><span>coffee reserves</span><span class="st warn">◐ degraded</span></li>
+            <li><span>pager</span><span class="st ok">● silent</span></li>
+          </ul>
+          <p class="status-pop-foot">uptime 99.99% · last incident: none that we admit to</p>
+        </div>
       </div>
     </div>
   </header>
@@ -85,18 +99,23 @@
           <ul class="hero-stats" aria-label="Career statistics">
             <li><span class="stat-num" data-count="7">0</span><span class="stat-suffix">+</span><span class="stat-label">years in infrastructure</span></li>
             <li><span class="stat-num" data-count="1000">0</span><span class="stat-suffix">+</span><span class="stat-label">servers automated</span></li>
-            <li><span class="stat-num" data-count="300">0</span><span class="stat-suffix">+</span><span class="stat-label">Ansible roles &amp; templates</span></li>
+            <li><span class="stat-num">$3.5M</span><span class="stat-label">saved annually via automation</span></li>
             <li><span class="stat-num" data-count="4">0</span><span class="stat-suffix">×</span><span class="stat-label">Azure certified</span></li>
           </ul>
         </div>
 
-        <div class="hero-terminal" aria-hidden="true">
-          <div class="term">
+        <div class="hero-terminal">
+          <div class="term" id="term">
             <div class="term-bar">
               <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
-              <span class="term-title mono">amar@platform: ~</span>
+              <span class="term-title mono">amar@platform: ~ — interactive, type away</span>
             </div>
-            <pre class="term-body mono" id="term-output"></pre>
+            <pre class="term-body mono" id="term-output" aria-live="polite"></pre>
+            <div class="term-input-line mono">
+              <span class="t-prompt">$&nbsp;</span>
+              <input id="term-input" type="text" autocomplete="off" autocapitalize="off"
+                     spellcheck="false" aria-label="Terminal — type 'help' and press Enter" />
+            </div>
           </div>
         </div>
       </div>
@@ -117,7 +136,8 @@
             ship without filing tickets.
           </p>
           <p>
-            Before that I spent six years at <strong>Tata Consultancy Services</strong>
+            Before that I spent six years at <strong>Tata Consultancy Services</strong>,
+            embedded with <strong>DNB Bank ASA</strong> — Norway's largest bank —
             climbing the whole infrastructure stack: Unix/Linux operations on
             RHEL and Solaris, configuration management with Ansible across a
             1000+ server estate, then Azure DevOps — pipelines, Bicep, and
@@ -147,6 +167,7 @@
   <span class="k">labels</span>:
     <span class="k">role</span>: <span class="v">senior-platform-engineer</span>
     <span class="k">org</span>: <span class="v">catalystone-solutions</span>
+    <span class="k">region</span>: <span class="v">oslo-norway</span>
 <span class="k">spec</span>:
   <span class="k">focus</span>:
     - <span class="v">internal-developer-platforms</span>
@@ -199,7 +220,7 @@
           <div class="stage-card">
             <div class="stage-meta mono"><span class="badge badge-done">✓ succeeded</span><span>May 2020 → Jul 2025</span></div>
             <h3>Azure DevOps Engineer</h3>
-            <p class="stage-org">Tata Consultancy Services Ltd.</p>
+            <p class="stage-org">Tata Consultancy Services Ltd. · DNB Bank ASA</p>
             <ul>
               <li>Designed and ran <strong>Azure CI/CD pipelines</strong> for continuous integration and deployment across multiple applications.</li>
               <li>Streamlined infrastructure deployments with <strong>Bicep</strong>, keeping environments reproducible and reviewable.</li>
@@ -217,12 +238,13 @@
           <div class="stage-card">
             <div class="stage-meta mono"><span class="badge badge-done">✓ succeeded</span><span>Dec 2019 → Jul 2025</span></div>
             <h3>Ansible Developer</h3>
-            <p class="stage-org">Tata Consultancy Services Ltd.</p>
+            <p class="stage-org">Tata Consultancy Services Ltd. · DNB Bank ASA</p>
             <ul>
               <li>Built an automation estate of <strong>80+ projects with 300+ roles and templates</strong> managing 1000+ servers on Red Hat Ansible Automation Platform.</li>
-              <li>Implemented <strong>infrastructure as code for OS provisioning</strong> — customized builds, CIS hardening, and default application baselines.</li>
-              <li>Automated application deployments and configuration management end to end; prototyped <strong>Event-Driven Ansible</strong>.</li>
-              <li>Generated compliance, security, and patching reports consumed by audit and operations.</li>
+              <li>Fully automated Linux patching with compliance reporting and application orchestration — saving <strong>~$3.5M and 20,000 engineer-hours annually</strong>.</li>
+              <li>Defined the <strong>RHEL 9 standard operating environment</strong> and a LEAPP in-place upgrade framework with automated remediation, re-hardening, and validation.</li>
+              <li>Architected <strong>compliance as code</strong> — dynamic Ansible hardening playbooks generated from OpenSCAP profiles; prototyped Event-Driven Ansible for GitOps and monitoring.</li>
+              <li>Automated a server decommissioning framework integrating ServiceNow, Dynatrace, Satellite, IdM, VMware, and Azure.</li>
             </ul>
             <div class="chips mono">
               <span>Ansible</span><span>AAP</span><span>CIS Hardening</span><span>Python</span><span>Compliance</span>
@@ -235,11 +257,12 @@
           <div class="stage-card">
             <div class="stage-meta mono"><span class="badge badge-done">✓ succeeded</span><span>Feb 2019 → Jul 2025</span></div>
             <h3>Unix/Linux Platform Engineer</h3>
-            <p class="stage-org">Tata Consultancy Services Ltd.</p>
+            <p class="stage-org">Tata Consultancy Services Ltd. · DNB Bank ASA</p>
             <ul>
-              <li>Automated daily operations with <strong>Bash</strong>, eliminating repetitive manual toil across the estate.</li>
-              <li>Standardized access management on <strong>OpenLDAP and Red Hat IdM</strong> — scripted, documented, and delegated to L1 by skill level.</li>
-              <li>Ran filesystem, <strong>PCS / VCS / Sun Cluster</strong> configuration and storage operations on RHEL and Solaris.</li>
+              <li>Automated daily operations with <strong>Bash, Python, and Perl</strong> — cluster monitoring, LDAP mirroring, access standardization — saving ~300 hours of work per month.</li>
+              <li>Standardized access management on <strong>OpenLDAP, OUD, and Red Hat IdM</strong> — scripted, documented, and delegated to L1 by skill level.</li>
+              <li>Ran <strong>PCS / VCS / Sun Cluster</strong> deployments with L3 support, filesystem and storage operations on RHEL and Solaris.</li>
+              <li>Built <strong>SRE SLI/SLO dashboards</strong> on Dynatrace and ServiceNow Kanban boards that kept the team ahead of SLA breaches.</li>
             </ul>
             <div class="chips mono">
               <span>RHEL</span><span>Solaris</span><span>Bash</span><span>OpenLDAP</span><span>IdM</span><span>Clustering</span>
@@ -367,7 +390,12 @@
         <div class="cred-card">
           <span class="cred-code mono">B.E.</span>
           <h3>Bachelor of Engineering</h3>
-          <p>Savitribai Phule Pune University · First Class with Distinction · Google India Challenge Scholar</p>
+          <p>Smt. Kashibai Navale College of Engineering, Pune · First Class with Distinction · Google India Challenge Scholar</p>
+        </div>
+        <div class="cred-card">
+          <span class="cred-code mono">19×</span>
+          <h3>Engineering Awards</h3>
+          <p>Beyond Excellence ×2 · Best Team ×3 · Most Valuable Team Member ×3 · Star of the Month ×4 · On the Spot ×6 · Maitree Prize</p>
         </div>
       </div>
     </section>
@@ -379,13 +407,15 @@
         <h2>Let's build a platform.</h2>
         <p class="contact-sub">
           Talking shop about developer platforms, Kubernetes, or automation?
-          My inbox reconciles faster than my clusters.
+          My inbox reconciles faster than my clusters. Based in Oslo, Norway.
         </p>
         <div class="contact-links">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/amarnathjamale/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-primary" href="mailto:amar@jamale.org">amar@jamale.org</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/amarnathjamale/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn btn-ghost" href="https://github.com/amarnathjamale" target="_blank" rel="noopener">GitHub</a>
           <a class="btn btn-ghost" href="https://twitter.com/amarnath_jamale" target="_blank" rel="noopener">Twitter / X</a>
           <a class="btn btn-ghost" href="assets/docs/Amarnath Jamale Resume v1.1.pdf" download>Résumé</a>
+          <a class="btn btn-ghost" href="assets/docs/Amarnath Jamale CV v4.0.pdf" download>Full CV</a>
         </div>
       </div>
     </section>

@@ -76,12 +76,28 @@ a:hover { text-decoration: underline; }
   color: var(--muted); font-size: 0.92rem; font-weight: 500; text-decoration: none;
 }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
+.status-wrap { position: relative; }
 .nav-status {
   display: flex; align-items: center; gap: 8px;
   font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
   border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px;
-  background: var(--surface);
+  background: var(--surface); cursor: pointer;
 }
+.nav-status:hover { border-color: var(--border-bright); color: var(--text); }
+.status-text { transition: opacity 0.25s ease; }
+.status-pop {
+  position: absolute; right: 0; top: calc(100% + 10px); z-index: 60;
+  width: 290px; padding: 16px 18px;
+  background: #0c1018; border: 1px solid var(--border-bright); border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  font-size: 0.75rem;
+}
+.status-pop-title { color: var(--text); font-weight: 700; margin-bottom: 10px; }
+.status-pop ul { list-style: none; display: grid; gap: 7px; margin-bottom: 12px; }
+.status-pop li { display: flex; justify-content: space-between; color: var(--muted); }
+.status-pop .st.ok { color: var(--accent); }
+.status-pop .st.warn { color: var(--amber); }
+.status-pop-foot { color: var(--faint); border-top: 1px solid var(--border); padding-top: 10px; }
 .status-dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
   box-shadow: 0 0 8px var(--accent);
@@ -162,6 +178,22 @@ a:hover { text-decoration: underline; }
 .term-body .t-ok { color: var(--accent); }
 .term-body .t-key { color: var(--accent-2); }
 .term-body .t-dim { color: var(--faint); }
+.term-body .t-err { color: var(--red); }
+.term-body a { color: var(--accent-2); text-decoration: underline; }
+
+.term-body { max-height: 340px; min-height: 280px; overflow-y: auto; }
+.term-input-line {
+  display: none; align-items: center;
+  padding: 0 18px 16px; font-size: 0.78rem;
+}
+.term.ready .term-input-line { display: flex; }
+.term.ready { cursor: text; }
+.term-input-line .t-prompt { color: var(--accent); }
+.term-input-line input {
+  flex: 1; background: transparent; border: none; outline: none;
+  color: #c9d4e3; font-family: var(--font-mono); font-size: 0.78rem;
+  caret-color: var(--accent);
+}
 
 /* ---------- sections ---------- */
 .section { max-width: var(--maxw); margin: 0 auto; padding: 88px 24px; }

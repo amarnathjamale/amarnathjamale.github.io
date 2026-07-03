@@ -172,6 +172,7 @@
       if (lower === "amar --hire") {
         print("  [amar] permission granted ✓", "t-ok");
         print('  opening hiring pipeline → <a href="https://www.linkedin.com/in/amarnathjamale/" target="_blank" rel="noopener">linkedin.com/in/amarnathjamale</a>', "t-key");
+        window.open("https://www.linkedin.com/in/amarnathjamale/", "_blank", "noopener");
         return;
       }
       if (lower.indexOf("amar ") === 0) {
@@ -200,9 +201,10 @@
         print("  error: try 'kubectl get pods'. RBAC says that's all you get.", "t-err");
         return;
       }
-      if (lower === "sudo hire amar" || lower === "sudo hire") {
+      if (lower === "sudo hire amar" || lower === "sudo hire" || lower === "hire" || lower === "hire amar") {
         print("  [sudo] permission granted ✓", "t-ok");
         print('  opening hiring pipeline → <a href="https://www.linkedin.com/in/amarnathjamale/" target="_blank" rel="noopener">linkedin.com/in/amarnathjamale</a>', "t-key");
+        window.open("https://www.linkedin.com/in/amarnathjamale/", "_blank", "noopener");
         return;
       }
       if (lower.indexOf("sudo") === 0) {
@@ -246,8 +248,20 @@
         else { histIdx = -1; termInput.value = ""; }
       }
     });
-    termWrap.addEventListener("click", function () {
+    termWrap.addEventListener("click", function (e) {
+      // don't steal focus while the user is selecting text or clicking a link
+      var sel = window.getSelection();
+      if (sel && String(sel).length > 0) return;
+      if (e.target.closest && e.target.closest("a")) return;
       if (termWrap.classList.contains("ready")) termInput.focus({ preventScroll: true });
+    });
+    // select-to-copy, like a real terminal
+    termEl.addEventListener("mouseup", function () {
+      var sel = window.getSelection();
+      var text = sel ? String(sel) : "";
+      if (text && navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).catch(function () {});
+      }
     });
 
     // play the intro, then hand over the prompt

@@ -94,6 +94,7 @@ a:hover { text-decoration: underline; }
 .status-text {
   transition: opacity 0.25s ease;
   width: 245px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  text-align: left;
 }
 .status-pop {
   position: absolute; right: 0; top: calc(100% + 10px); z-index: 60;
@@ -462,8 +463,8 @@ a:hover { text-decoration: underline; }
   --amber: #b58900; --red: #dc322f;
   --dot: rgba(7, 54, 66, 0.09);
   --shadow-c: rgba(101, 123, 131, 0.3);
-  --term-bg: #002b36; --term-head: #073642;
-  --term-text: #93a1a1; --term-muted: #657b83;
+  --term-bg: #eee8d5; --term-head: #e4ddc8;
+  --term-text: #586e75; --term-muted: #93a1a1;
 }
 [data-theme="hr-light"] {
   --bg: #f8fafc; --bg-soft: #f1f5f9;
@@ -475,8 +476,8 @@ a:hover { text-decoration: underline; }
   --amber: #d97706; --red: #dc2626;
   --dot: rgba(15, 23, 42, 0.07);
   --shadow-c: rgba(15, 23, 42, 0.15);
-  --term-bg: #0f172a; --term-head: #1e293b;
-  --term-text: #cbd5e1; --term-muted: #64748b;
+  --term-bg: #ffffff; --term-head: #f1f5f9;
+  --term-text: #334155; --term-muted: #94a3b8;
 }
 
 /* ---------- theme picker ---------- */

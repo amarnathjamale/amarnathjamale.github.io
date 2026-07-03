@@ -91,7 +91,10 @@ a:hover { text-decoration: underline; }
   background: var(--surface); cursor: pointer;
 }
 .nav-status:hover { border-color: var(--border-bright); color: var(--text); }
-.status-text { transition: opacity 0.25s ease; }
+.status-text {
+  transition: opacity 0.25s ease;
+  width: 245px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
 .status-pop {
   position: absolute; right: 0; top: calc(100% + 10px); z-index: 60;
   width: 290px; padding: 16px 18px;
@@ -521,7 +524,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 600px) {
   .nav-links { display: none; }
   .nav-inner { justify-content: space-between; gap: 10px; }
-  .status-text { max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .status-text { width: 150px; }
   .theme-pop { right: auto; left: 0; }
   .stack-grid, .creds-grid { grid-template-columns: 1fr; }
   .section { padding: 64px 20px; }

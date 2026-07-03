@@ -294,6 +294,13 @@ a:hover { text-decoration: underline; }
 
 /* ---------- now shipping ---------- */
 .ship-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.ship-past-label { color: var(--faint); font-size: 0.8rem; margin: 34px 0 14px; }
+.ship-card.past { border-color: rgba(56, 189, 248, 0.25); }
+.ship-card.past:hover { border-color: rgba(56, 189, 248, 0.5); }
+.ship-tag.past {
+  color: var(--accent-2); background: var(--accent-2-dim);
+  border-color: rgba(56, 189, 248, 0.25);
+}
 .ship-card {
   background: linear-gradient(170deg, var(--surface-2), var(--surface));
   border: 1px solid var(--border-bright); border-radius: var(--radius);

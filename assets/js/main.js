@@ -1,4 +1,4 @@
-/* amar.jamale.org — Platform Console interactions */
+/* amar.jamale.org: Platform Console interactions */
 (function () {
   "use strict";
 
@@ -155,7 +155,7 @@
         return;
       }
       if (lower === "cat resume.pdf" || lower === "cat cv.pdf") {
-        print("  binary file — use 'contact' for download links.", "t-dim");
+        print("  binary file. use 'contact' for download links.", "t-dim");
         return;
       }
       if (lower === "kubectl get pods") {
@@ -167,7 +167,7 @@
         return;
       }
       if (lower.indexOf("kubectl") === 0) {
-        print("  error: try 'kubectl get pods' — RBAC says that's all you get.", "t-err");
+        print("  error: try 'kubectl get pods'. RBAC says that's all you get.", "t-err");
         return;
       }
       if (lower === "sudo hire amar" || lower === "sudo hire") {
@@ -180,7 +180,7 @@
         return;
       }
       if (lower.indexOf("rm ") === 0 || lower === "rm") {
-        print("  ✗ denied by kyverno policy 'protect-everything' — nice try.", "t-err");
+        print("  ✗ denied by kyverno policy 'protect-everything'. nice try.", "t-err");
         return;
       }
       if (lower.indexOf("ansible") === 0) {
@@ -188,14 +188,14 @@
         print("  the fleet is idempotent. nothing to do.", "t-dim");
         return;
       }
-      if (lower === "ping") { print("  pong (0.42ms — platform-grade latency)", "t-ok"); return; }
+      if (lower === "ping") { print("  pong (0.42ms, platform-grade latency)", "t-ok"); return; }
       if (lower === "pwd") { print("  /home/amar/platforms", "t-key"); return; }
-      print("  command not found: " + esc(cmd) + " — try 'help'", "t-err");
+      print("  command not found: " + esc(cmd) + ". try 'help'", "t-err");
     };
 
     var activateShell = function () {
       print("", "");
-      print("type 'help' to explore — this shell is real (the infra behind it is not)", "t-dim");
+      print("type 'help' to explore. the shell is real, the infra behind it is not", "t-dim");
       termWrap.classList.add("ready");
     };
 

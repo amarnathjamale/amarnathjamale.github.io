@@ -78,6 +78,7 @@
       help: function () {
         print("  available commands:", "t-dim");
         print("    whoami          who is this guy", "t-key");
+        print("    amar --help     the man himself, as a cli", "t-key");
         print("    experience      career history", "t-key");
         print("    capabilities    what i do", "t-key");
         print("    certs           certifications", "t-key");
@@ -148,6 +149,35 @@
 
       if (commands[lower]) return commands[lower]();
       if (lower === "skills") return commands.capabilities();
+      if (lower === "amar" || lower === "amar --help" || lower === "amar -h") {
+        print("  usage: amar [flag]", "t-dim");
+        print("    --status         current assignment", "t-key");
+        print("    --capabilities   what i do", "t-key");
+        print("    --experience     career history", "t-key");
+        print("    --certs          certifications", "t-key");
+        print("    --contact        get in touch", "t-key");
+        print("    --hire           skip the queue", "t-key");
+        return;
+      }
+      if (lower === "amar --status") {
+        print("  role:      Senior Platform Engineer", "t-key");
+        print("  org:       CatalystOne Solutions AS", "t-key");
+        print("  mission:   make shipping software boring", "t-key");
+        return;
+      }
+      if (lower.indexOf("amar --capabilities") === 0) return commands.capabilities();
+      if (lower === "amar --experience") return commands.experience();
+      if (lower === "amar --certs") return commands.certs();
+      if (lower === "amar --contact") return commands.contact();
+      if (lower === "amar --hire") {
+        print("  [amar] permission granted ✓", "t-ok");
+        print('  opening hiring pipeline → <a href="https://www.linkedin.com/in/amarnathjamale/" target="_blank" rel="noopener">linkedin.com/in/amarnathjamale</a>', "t-key");
+        return;
+      }
+      if (lower.indexOf("amar ") === 0) {
+        print("  unknown flag. try 'amar --help'", "t-err");
+        return;
+      }
       if (lower === "cat engineer.yaml") {
         print("  kind: PlatformEngineer", "t-key");
         print("  spec: { focus: [idp, kubernetes, iac, automation] }", "t-key");
@@ -280,14 +310,13 @@
         }, 250);
       }, 6000);
     }
-    statusBtn.addEventListener("click", function (e) {
-      e.stopPropagation();
+    statusBtn.addEventListener("click", function () {
       var open = !statusPop.hidden;
       statusPop.hidden = open;
       statusBtn.setAttribute("aria-expanded", String(!open));
     });
     document.addEventListener("click", function (e) {
-      if (!statusPop.hidden && !statusPop.contains(e.target)) {
+      if (!statusPop.hidden && !(e.target.closest && e.target.closest(".status-wrap"))) {
         statusPop.hidden = true;
         statusBtn.setAttribute("aria-expanded", "false");
       }
@@ -392,14 +421,13 @@
         themeBtn.setAttribute("aria-expanded", "false");
       });
     });
-    themeBtn.addEventListener("click", function (e) {
-      e.stopPropagation();
+    themeBtn.addEventListener("click", function () {
       var open = !themePop.hidden;
       themePop.hidden = open;
       themeBtn.setAttribute("aria-expanded", String(!open));
     });
     document.addEventListener("click", function (e) {
-      if (!themePop.hidden && !themePop.contains(e.target)) {
+      if (!themePop.hidden && !(e.target.closest && e.target.closest(".theme-wrap"))) {
         themePop.hidden = true;
         themeBtn.setAttribute("aria-expanded", "false");
       }

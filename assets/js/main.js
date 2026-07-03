@@ -363,6 +363,55 @@
   }, { rootMargin: "-40% 0px -55% 0px" });
   sections.forEach(function (s) { if (s) sectionObserver.observe(s); });
 
+  /* ---------- theme picker ---------- */
+  var themeBtn = document.getElementById("theme-btn");
+  var themePop = document.getElementById("theme-pop");
+  if (themeBtn && themePop) {
+    var themeOpts = themePop.querySelectorAll(".theme-opt");
+    var markActive = function () {
+      var current = document.documentElement.getAttribute("data-theme") || "";
+      themeOpts.forEach(function (o) {
+        o.classList.toggle("active", o.getAttribute("data-theme-opt") === current);
+      });
+    };
+    markActive();
+    themeOpts.forEach(function (opt) {
+      opt.addEventListener("click", function () {
+        var v = opt.getAttribute("data-theme-opt");
+        if (v) {
+          document.documentElement.setAttribute("data-theme", v);
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+        try {
+          if (v) localStorage.setItem("theme", v);
+          else localStorage.removeItem("theme");
+        } catch (e) {}
+        markActive();
+        themePop.hidden = true;
+        themeBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+    themeBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = !themePop.hidden;
+      themePop.hidden = open;
+      themeBtn.setAttribute("aria-expanded", String(!open));
+    });
+    document.addEventListener("click", function (e) {
+      if (!themePop.hidden && !themePop.contains(e.target)) {
+        themePop.hidden = true;
+        themeBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !themePop.hidden) {
+        themePop.hidden = true;
+        themeBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   /* ---------- console easter egg ---------- */
   if (window.console && console.log) {
     console.log(

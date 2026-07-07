@@ -350,6 +350,21 @@ a:hover { text-decoration: underline; }
 .stack-card h3 { font-size: 1.02rem; font-weight: 700; }
 .stack-card > p { color: var(--muted); font-size: 0.88rem; margin-bottom: 16px; }
 
+/* ---------- stack card tech icons ---------- */
+.stack-icons {
+  display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+  margin-top: 16px; padding-top: 14px;
+  border-top: 1px dashed var(--border);
+}
+.stack-icons img {
+  height: 24px; width: 24px; object-fit: contain;
+  filter: grayscale(35%); opacity: 0.85;
+  transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+.stack-icons img:hover {
+  filter: none; opacity: 1; transform: translateY(-2px) scale(1.2);
+}
+
 /* ---------- credentials ---------- */
 .creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .cred-card {

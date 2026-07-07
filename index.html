@@ -306,26 +306,44 @@
       <div class="section-head">
         <p class="section-kicker mono">## 03 · now shipping</p>
         <h2>Flagship platform work.</h2>
-        <p class="section-sub">The systems reconciling in production today, and the fleet that proved the playbook.</p>
+        <p class="section-sub">The CatalystOne platform I'm building today, and the fleet that proved the playbook.</p>
       </div>
       <div class="ship-grid">
         <div class="ship-card">
           <span class="ship-tag mono">internal developer platform</span>
           <h3>One portal for everything</h3>
-          <p>A Backstage portal unifying the software catalog, scaffolder golden paths, TechDocs, and live Kubernetes state across a multi-region AKS fleet, with Entra ID auth, fine-grained RBAC, and custom plugins for the bits off the beaten path.</p>
-          <div class="chips mono"><span>Backstage</span><span>Custom Plugins</span><span>RBAC</span><span>Entra ID</span><span>Multi-cluster</span></div>
+          <p>A Backstage portal unifying the software catalog, scaffolder golden paths, TechDocs, and live Kubernetes state across a multi-region AKS fleet, with Entra ID auth, fine-grained RBAC, and adoption insights to steer the roadmap.</p>
+          <div class="chips mono"><span>Backstage</span><span>Catalog</span><span>TechDocs</span><span>RBAC</span><span>Entra ID</span></div>
         </div>
         <div class="ship-card">
           <span class="ship-tag mono">platform control plane</span>
           <h3>Infrastructure as an API</h3>
-          <p>A Crossplane control plane turning Azure, Entra ID, and Cloudflare into 35+ Kubernetes-native, self-service platform APIs: composed with functions, gated by Kyverno policy, and consumed by teams through plain pull requests.</p>
-          <div class="chips mono"><span>Crossplane</span><span>XRDs</span><span>Composition Functions</span><span>Kyverno</span><span>Policy as Code</span></div>
+          <p>A Crossplane control plane on <span class="mono">platform.catalystone.dev</span> turning Azure, Entra ID, and Cloudflare into 40+ Kubernetes-native, self-service APIs: composed with functions, isolated per-subscription-per-resource-type, and requested by teams through plain pull requests.</p>
+          <div class="chips mono"><span>Crossplane</span><span>XRDs</span><span>Composition Functions</span><span>Azure</span><span>Cloudflare</span></div>
         </div>
         <div class="ship-card">
           <span class="ship-tag mono">gitops fleet delivery</span>
           <h3>Git is the deploy button</h3>
-          <p>Flux v2 hub-and-spoke delivery across the cluster fleet: server-side apply, tiered reconciliation, CI policy gates on every PR, and a zero-static-secrets identity chain federated across GitHub OIDC, AKS, and Entra ID.</p>
+          <p>Flux v2 hub-and-spoke delivery: a single platform hub remote-applies to spoke clusters over Workload Identity, with tiered reconciliation, CI policy gates on every PR, and a zero-static-secrets identity chain across GitHub OIDC, AKS, and Entra ID.</p>
           <div class="chips mono"><span>Flux v2</span><span>Hub &amp; Spoke</span><span>Workload Identity</span><span>ESO</span><span>Key Vault</span></div>
+        </div>
+        <div class="ship-card">
+          <span class="ship-tag mono">golden paths</span>
+          <h3>Paved paths, not guesswork</h3>
+          <p>Scaffolder templates that stamp out production-ready Spring Boot services, React/Next frontends, and shared libraries, plus Crossplane resource requests (Key Vault, Azure RBAC, AI Foundry) with federated credentials and multitenancy wired in from commit one.</p>
+          <div class="chips mono"><span>Scaffolder</span><span>Spring Boot</span><span>React</span><span>Crossplane Templates</span></div>
+        </div>
+        <div class="ship-card">
+          <span class="ship-tag mono">custom plugins</span>
+          <h3>Plugins for the gaps</h3>
+          <p>A suite of <span class="mono">@catalystone</span> Backstage modules: an Azure-resources Kubernetes ingestor, extended GitHub scaffolder actions, GitHub-environment and federated-credential automation, and Teams notifications, published through a Yarn 4 monorepo with Changesets.</p>
+          <div class="chips mono"><span>TypeScript</span><span>Backstage Plugins</span><span>GitHub API</span><span>MS Graph</span></div>
+        </div>
+        <div class="ship-card">
+          <span class="ship-tag mono">policy as code</span>
+          <h3>Guardrails, not gatekeepers</h3>
+          <p>A CIS-aligned Kyverno policy suite (35 validating + 1 mutating) authored and tested with a wave-based audit-to-deny rollout, deletion-guards on critical identities and Key Vaults, and an approval gate for Entra permission grants.</p>
+          <div class="chips mono"><span>Kyverno</span><span>CIS</span><span>Admission Control</span><span>Governance</span></div>
         </div>
       </div>
 

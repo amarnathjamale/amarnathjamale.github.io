@@ -384,6 +384,22 @@ a.cred-card:hover { text-decoration: none; }
 .cred-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
 .cred-card p { color: var(--faint); font-size: 0.85rem; }
 
+/* ---------- lab ---------- */
+.lab-term {
+  background: var(--term-bg); border: 1px solid var(--border-bright);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 16px 48px var(--shadow-c);
+}
+.lab-body {
+  padding: 22px 24px; font-size: 0.82rem; line-height: 1.75;
+  color: var(--term-text); overflow-x: auto; white-space: pre;
+}
+.lab-body .t-prompt { color: var(--accent); }
+.lab-body .t-ok { color: var(--accent); }
+.lab-body .t-key { color: var(--accent-2); }
+.lab-body .t-dim { color: var(--term-muted); }
+.lab-body a { color: var(--accent-2); text-decoration: underline; }
+
 /* ---------- contact ---------- */
 .contact { padding-bottom: 110px; }
 .contact-card {

@@ -63,6 +63,7 @@
         <a href="#shipping">Work</a>
         <a href="#platform">Platform</a>
         <a href="#credentials">Credentials</a>
+        <a href="#lab">Lab</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="theme-wrap">
@@ -469,10 +470,50 @@
       </div>
     </section>
 
+    <!-- ============ LAB ============ -->
+    <section class="section" id="lab">
+      <div class="section-head">
+        <p class="section-kicker mono">## 06 · lab</p>
+        <h2>Nights and weekends.</h2>
+        <p class="section-sub">Platforms pay the bills; these are the things I built to learn, tinker, and stay curious.</p>
+      </div>
+
+      <div class="lab-term">
+        <div class="term-bar">
+          <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+          <span class="term-title mono">amar@platform: ~/lab</span>
+        </div>
+        <pre class="lab-body mono"><span class="t-prompt">$</span> ls -la ~/lab
+
+<span class="t-dim">drwxr-xr-x  games/</span>
+  <span class="t-ok">chess-engine</span>        move generation &amp; evaluation for a game-dev engine
+  <span class="t-ok">poker</span>               table logic, written in <span class="t-key">TypeScript</span>
+  <span class="t-ok">minesweeper</span>         classic solver, <span class="t-key">Python</span> OOP
+  <span class="t-ok">tic-tac-toe</span>         <span class="t-key">React</span>, tested with Jest + Testing Library
+  <span class="t-ok">flappy-bird</span>         a <span class="t-key">React</span> clone, because why not
+
+<span class="t-dim">drwxr-xr-x  ml/</span>
+  <span class="t-ok">movie-recommender</span>   collaborative filtering on <span class="t-key">TensorFlow</span>
+  <span class="t-ok">music-engine</span>        recommendation engine in <span class="t-key">Python</span>
+
+<span class="t-dim">drwxr-xr-x  web/</span>
+  <span class="t-ok">quiz-app</span>            <span class="t-key">React</span>
+  <span class="t-ok">exercise-tracker</span>    <span class="t-key">Redux</span> state management
+  <span class="t-ok">recipe-parser</span>       ingredient parser in <span class="t-key">JavaScript</span>
+  <span class="t-ok">book-library</span>        personal library manager, <span class="t-key">JavaScript</span>
+
+<span class="t-dim">drwxr-xr-x  utils/</span>
+  <span class="t-ok">battery-calc</span>        battery-life estimator, <span class="t-key">Python</span>
+
+<span class="t-prompt">$</span> git log --author=amar --oneline | wc -l
+<span class="t-dim"># more on</span> <a href="https://github.com/amarnathjamale" target="_blank" rel="noopener">github.com/amarnathjamale</a> <span class="cursor-blink">▌</span></pre>
+      </div>
+    </section>
+
     <!-- ============ CONTACT ============ -->
     <section class="section contact" id="contact">
       <div class="contact-card">
-        <p class="section-kicker mono">## 06 · contact</p>
+        <p class="section-kicker mono">## 07 · contact</p>
         <h2>Let's build a platform.</h2>
         <p class="contact-sub">
           Talking shop about developer platforms, Kubernetes, or automation?
@@ -526,5 +567,10 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <!-- Privacy-friendly analytics (GoatCounter): no cookies, no personal data.
+       TODO: register the site at https://www.goatcounter.com/ (free) and replace
+       "amarjamale" below with your own site code. Until then the count pixel 404s harmlessly. -->
+  <script data-goatcounter="https://amarjamale.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

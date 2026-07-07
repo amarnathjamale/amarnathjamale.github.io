@@ -377,7 +377,7 @@
 
   /* ---------- scroll reveal ---------- */
   var revealTargets = document.querySelectorAll(
-    ".section-head, .stage, .ship-card, .stack-card, .cred-card, .about-text, .about-manifest, .contact-card"
+    ".section-head, .stage, .ship-card, .stack-card, .cred-card, .auto-card, .about-text, .about-manifest, .contact-card"
   );
   revealTargets.forEach(function (el) { el.classList.add("reveal"); });
   var revealObserver = new IntersectionObserver(function (entries) {

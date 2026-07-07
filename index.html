@@ -63,7 +63,7 @@
         <a href="#shipping">Work</a>
         <a href="#platform">Platform</a>
         <a href="#credentials">Credentials</a>
-        <a href="#lab">Lab</a>
+        <a href="#automation">Automation</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="theme-wrap">
@@ -470,44 +470,58 @@
       </div>
     </section>
 
-    <!-- ============ LAB ============ -->
-    <section class="section" id="lab">
+    <!-- ============ AUTOMATION ============ -->
+    <section class="section" id="automation">
       <div class="section-head">
-        <p class="section-kicker mono">## 06 · lab</p>
-        <h2>Nights and weekends.</h2>
-        <p class="section-sub">Platforms pay the bills; these are the things I built to learn, tinker, and stay curious.</p>
+        <p class="section-kicker mono">## 06 · automation</p>
+        <h2>Playbooks that ran a bank.</h2>
+        <p class="section-sub">A slice of the <strong>80+ projects and 300+ roles</strong> I built on Red Hat Ansible Automation Platform across DNB's 1000+ server estate. Each one replaced a runbook with code.</p>
       </div>
 
-      <div class="lab-term">
-        <div class="term-bar">
-          <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
-          <span class="term-title mono">amar@platform: ~/lab</span>
-        </div>
-        <pre class="lab-body mono"><span class="t-prompt">$</span> ls -la ~/lab
-
-<span class="t-dim">drwxr-xr-x  games/</span>
-  <span class="t-ok">chess-engine</span>        move generation &amp; evaluation for a game-dev engine
-  <span class="t-ok">poker</span>               table logic, written in <span class="t-key">TypeScript</span>
-  <span class="t-ok">minesweeper</span>         classic solver, <span class="t-key">Python</span> OOP
-  <span class="t-ok">tic-tac-toe</span>         <span class="t-key">React</span>, tested with Jest + Testing Library
-  <span class="t-ok">flappy-bird</span>         a <span class="t-key">React</span> clone, because why not
-
-<span class="t-dim">drwxr-xr-x  ml/</span>
-  <span class="t-ok">movie-recommender</span>   collaborative filtering on <span class="t-key">TensorFlow</span>
-  <span class="t-ok">music-engine</span>        recommendation engine in <span class="t-key">Python</span>
-
-<span class="t-dim">drwxr-xr-x  web/</span>
-  <span class="t-ok">quiz-app</span>            <span class="t-key">React</span>
-  <span class="t-ok">exercise-tracker</span>    <span class="t-key">Redux</span> state management
-  <span class="t-ok">recipe-parser</span>       ingredient parser in <span class="t-key">JavaScript</span>
-  <span class="t-ok">book-library</span>        personal library manager, <span class="t-key">JavaScript</span>
-
-<span class="t-dim">drwxr-xr-x  utils/</span>
-  <span class="t-ok">battery-calc</span>        battery-life estimator, <span class="t-key">Python</span>
-
-<span class="t-prompt">$</span> git log --author=amar --oneline | wc -l
-<span class="t-dim"># more on</span> <a href="https://github.com/amarnathjamale" target="_blank" rel="noopener">github.com/amarnathjamale</a> <span class="cursor-blink">▌</span></pre>
+      <div class="auto-grid">
+        <article class="auto-card">
+          <h3>Fleet-wide RHEL patching</h3>
+          <p>End-to-end OS patching: Satellite content promotion, ServiceNow change requests, application failover to passive nodes, and day-0 errata within a day, across the estate. The backbone of the ~$3.5M/year savings.</p>
+          <div class="chips mono"><span>Ansible</span><span>Satellite</span><span>ServiceNow</span><span>Insights</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>RHEL 9 SOE &amp; LEAPP upgrades</h3>
+          <p>Standard operating environment via image-builder and kickstart, plus a report-driven LEAPP in-place major-upgrade framework with dynamic remediation, re-hardening, and validation — no redeploy, no app migration.</p>
+          <div class="chips mono"><span>Ansible</span><span>Satellite</span><span>image-builder</span><span>LEAPP</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>CIS hardening as code</h3>
+          <p>Dynamic Ansible playbooks generated from OpenSCAP profiles: deploy the CIS benchmark, refresh rules without internet access, scan periodically, and apply only the rules a client approves.</p>
+          <div class="chips mono"><span>Ansible</span><span>OpenSCAP</span><span>CIS</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>Config as Code: Satellite &amp; AAP</h3>
+          <p>Extract, version, and restore the full configuration of Red Hat Satellite and Ansible Automation Platform as code — repos, content views, job templates, inventories, RBAC — for reproducible, recoverable control planes.</p>
+          <div class="chips mono"><span>Ansible</span><span>Satellite</span><span>AAP</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>Event-driven decommissioning</h3>
+          <p>A ServiceNow-triggered, approval-gated teardown built on Event-Driven Ansible: removes hosts from Satellite, IdM, and Azure, then publishes a released-capacity report.</p>
+          <div class="chips mono"><span>Event-Driven Ansible</span><span>ServiceNow</span><span>IdM</span><span>Azure</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>Automated access provisioning</h3>
+          <p>Azure tags and Satellite params drive Red Hat IdM: user groups, host groups, HBAC, and sudo rules created or extended automatically as each server lands — access without tickets.</p>
+          <div class="chips mono"><span>Ansible</span><span>Red Hat IdM</span><span>Azure</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>Secured-app deployments</h3>
+          <p>Pipeline-built servers that deploy and configure CyberArk PSMP/PTA, Dynatrace, and Autosys at build time, with on-the-fly upgrades and full-infra redeploys.</p>
+          <div class="chips mono"><span>Ansible</span><span>CyberArk</span><span>Dynatrace</span><span>Azure DevOps</span></div>
+        </article>
+        <article class="auto-card">
+          <h3>Compliance &amp; capacity reporting</h3>
+          <p>Self-publishing HTML dashboards: weekly patch/CVE compliance and non-reporting hosts from Satellite, Solaris capacity and hardware health, and pre-prod server-handover validation.</p>
+          <div class="chips mono"><span>Ansible</span><span>Satellite</span><span>Solaris</span><span>HTML5</span></div>
+        </article>
       </div>
+
+      <p class="auto-foot mono"><span class="t-dim">#</span> and ~40 more: SOSReport auto-upload, pre/post-change checks, disaster-recovery drills, LVM standardization, support-case digests…</p>
     </section>
 
     <!-- ============ CONTACT ============ -->

@@ -384,21 +384,21 @@ a.cred-card:hover { text-decoration: none; }
 .cred-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
 .cred-card p { color: var(--faint); font-size: 0.85rem; }
 
-/* ---------- lab ---------- */
-.lab-term {
-  background: var(--term-bg); border: 1px solid var(--border-bright);
-  border-radius: var(--radius); overflow: hidden;
-  box-shadow: 0 16px 48px var(--shadow-c);
+/* ---------- automation ---------- */
+.auto-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.auto-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px 20px; min-width: 0;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
-.lab-body {
-  padding: 22px 24px; font-size: 0.82rem; line-height: 1.75;
-  color: var(--term-text); overflow-x: auto; white-space: pre;
+.auto-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  transform: translateY(-3px);
 }
-.lab-body .t-prompt { color: var(--accent); }
-.lab-body .t-ok { color: var(--accent); }
-.lab-body .t-key { color: var(--accent-2); }
-.lab-body .t-dim { color: var(--term-muted); }
-.lab-body a { color: var(--accent-2); text-decoration: underline; }
+.auto-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.auto-card > p { color: var(--muted); font-size: 0.85rem; margin-bottom: 14px; }
+.auto-foot { margin-top: 22px; color: var(--faint); font-size: 0.82rem; }
+.auto-foot .t-dim { color: var(--accent); }
 
 /* ---------- contact ---------- */
 .contact { padding-bottom: 110px; }
@@ -578,7 +578,7 @@ a.cred-card:hover { text-decoration: none; }
   .hero-grid, .about-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 64px; }
   .hero-terminal { order: 2; }
-  .stack-grid, .creds-grid { grid-template-columns: repeat(2, 1fr); }
+  .stack-grid, .creds-grid, .auto-grid { grid-template-columns: repeat(2, 1fr); }
   .ship-grid { grid-template-columns: 1fr; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .code-card { position: static; }
@@ -588,7 +588,7 @@ a.cred-card:hover { text-decoration: none; }
   .nav-inner { justify-content: space-between; gap: 10px; }
   .status-text { width: 150px; }
   .theme-pop { right: auto; left: 0; }
-  .stack-grid, .creds-grid { grid-template-columns: 1fr; }
+  .stack-grid, .creds-grid, .auto-grid { grid-template-columns: 1fr; }
   .section { padding: 64px 20px; }
   .stage { grid-template-columns: 1fr; }
   .pipeline::before { display: none; }

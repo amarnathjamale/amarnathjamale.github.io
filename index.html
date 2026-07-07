@@ -13,9 +13,14 @@
   <meta property="og:title" content="Amarnath Jamale · Senior Platform Engineer" />
   <meta property="og:description" content="Internal developer platforms, cloud infrastructure, and automation at scale. Backstage · Crossplane · Flux · AKS · Ansible · Azure." />
   <meta property="og:url" content="https://amar.jamale.org/" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://amar.jamale.org/assets/images/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Amarnath Jamale, Senior Platform Engineer. Terminal card with career stats." />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Amarnath Jamale · Senior Platform Engineer" />
   <meta name="twitter:description" content="Internal developer platforms, cloud infrastructure, and automation at scale." />
+  <meta name="twitter:image" content="https://amar.jamale.org/assets/images/og-card.png" />
 
   <script>
     try {
@@ -392,26 +397,26 @@
       </div>
 
       <div class="creds-grid">
-        <div class="cred-card featured">
+        <a class="cred-card featured" href="https://www.credly.com/users/amarnath-jamale" target="_blank" rel="noopener">
           <span class="cred-code mono">AZ-400</span>
           <h3>DevOps Engineer Expert</h3>
-          <p>Microsoft Certified</p>
-        </div>
-        <div class="cred-card">
+          <p>Microsoft Certified · verify on credly ↗</p>
+        </a>
+        <a class="cred-card" href="https://www.credly.com/users/amarnath-jamale" target="_blank" rel="noopener">
           <span class="cred-code mono">AZ-204</span>
           <h3>Azure Developer Associate</h3>
-          <p>Microsoft Certified</p>
-        </div>
-        <div class="cred-card">
+          <p>Microsoft Certified · verify on credly ↗</p>
+        </a>
+        <a class="cred-card" href="https://www.credly.com/users/amarnath-jamale" target="_blank" rel="noopener">
           <span class="cred-code mono">AZ-104</span>
           <h3>Azure Administrator Associate</h3>
-          <p>Microsoft Certified</p>
-        </div>
-        <div class="cred-card">
+          <p>Microsoft Certified · verify on credly ↗</p>
+        </a>
+        <a class="cred-card" href="https://www.credly.com/users/amarnath-jamale" target="_blank" rel="noopener">
           <span class="cred-code mono">AZ-900</span>
           <h3>Azure Fundamentals</h3>
-          <p>Microsoft Certified</p>
-        </div>
+          <p>Microsoft Certified · verify on credly ↗</p>
+        </a>
         <div class="cred-card">
           <span class="cred-code mono">GCP</span>
           <h3>Developer Essentials · VM Migration</h3>
@@ -447,6 +452,29 @@
           <a class="btn btn-ghost" href="assets/docs/Amarnath Jamale Resume v1.1.pdf" download>Résumé</a>
           <a class="btn btn-ghost" href="assets/docs/Amarnath Jamale CV v4.0.pdf" download>Full CV</a>
         </div>
+
+        <form class="reachout" action="https://formsubmit.co/amar@jamale.org" method="POST">
+          <p class="reachout-title mono">$ mail -s "reach out" amar@jamale.org</p>
+          <input type="hidden" name="_subject" value="Reach out via amar.jamale.org" />
+          <input type="hidden" name="_next" value="https://amar.jamale.org/?sent=true#contact" />
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="reachout-row">
+            <label>
+              <span class="mono">from.name</span>
+              <input type="text" name="name" required placeholder="Jane Doe" />
+            </label>
+            <label>
+              <span class="mono">from.email</span>
+              <input type="email" name="email" required placeholder="jane@example.com" />
+            </label>
+          </div>
+          <label>
+            <span class="mono">message</span>
+            <textarea name="message" rows="4" required placeholder="Let's talk platforms."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message →</button>
+          <p class="reachout-sent mono" id="reachout-sent" hidden>✓ message delivered. expect a reply soon.</p>
+        </form>
       </div>
     </section>
 

@@ -454,6 +454,12 @@
     });
   }
 
+  /* ---------- reachout sent confirmation ---------- */
+  if (window.location.search.indexOf("sent=true") !== -1) {
+    var sentEl = document.getElementById("reachout-sent");
+    if (sentEl) sentEl.hidden = false;
+  }
+
   /* ---------- console easter egg ---------- */
   if (window.console && console.log) {
     console.log(

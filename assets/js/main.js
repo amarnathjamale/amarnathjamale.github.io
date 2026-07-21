@@ -113,7 +113,7 @@
         print('  email:    <a href="mailto:amar@jamale.org">amar@jamale.org</a>', "t-key");
         print('  linkedin: <a href="https://www.linkedin.com/in/amarnathjamale/" target="_blank" rel="noopener">linkedin.com/in/amarnathjamale</a>', "t-key");
         print('  github:   <a href="https://github.com/amarnathjamale" target="_blank" rel="noopener">github.com/amarnathjamale</a>', "t-key");
-        print('  resume:   <a href="assets/docs/Amarnath Jamale Resume v1.1.pdf" download>resume.pdf</a> · <a href="assets/docs/Amarnath Jamale CV v4.0.pdf" download>cv.pdf</a>', "t-key");
+        print('  resume:   <a href="assets/docs/Amarnath_Jamale_Resume.pdf" download>resume.pdf</a> · <a href="assets/docs/Amarnath_Jamale_CV.pdf" download>cv.pdf</a>', "t-key");
       },
       awards: function () {
         print("  🏆 beyond excellence ×2 · best team ×3 · mvp ×3", "t-ok");
